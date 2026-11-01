@@ -1,0 +1,4 @@
+metric,yes_n,yes_correct,no_n,no_correct,p_value,p_holm_three
+report_six_complete,52,42,50,42,0.796567003856592,1.0
+new_values_after_opening,39,35,63,49,0.18157448133310003,0.5447234439993001
+all_four_report_quantities_reused,42,34,60,50,0.7959535299956866,1.0

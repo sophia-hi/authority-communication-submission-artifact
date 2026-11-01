@@ -1,0 +1,41 @@
+design_version: authority_communication_review_v20
+economic_generator_version: branch_pricing_v1
+economic_master_seed: 20261013
+document_template_seed: 20261013
+counterbalance_seed: 20261019
+rho_grid: [0.0, 0.25, 0.5, 0.75, 1.0]
+families: 60
+target_rho1_labels:
+  AA: 15
+  AB: 15
+  BA: 15
+  BB: 15
+target_transition_rho:
+  0.25: 20
+  0.5: 20
+  0.75: 20
+target_substantive_rho1:
+  standard|standard: 30
+  premium|premium: 30
+selection:
+  candidate_start: 1
+  minimum_local_gap_m: 0.20
+  maximum_local_gap_m: 2.50
+  minimum_optimum_margin_m: 0.05
+  minimum_relative_optimum_margin: 0.01
+  minimum_rho1_regret_of_local_plan_m: 0.50
+  transition_rho_min: 0.25
+  transition_rho_max: 0.75
+  minimum_adjacent_score_change: 2.0
+runtime:
+  model: openai/gpt-6-luna
+  observed_served_endpoint_model: openai/gpt-6-luna-20260922
+  openrouter_provider_order: [OpenAI]
+  reasoning_effort: low
+  temperature: null
+  max_output_tokens_per_request: 16000
+  api_timeout_s: 600
+  transient_request_retries: 2
+  emergency_max_messages: 40
+  consecutive_empty_round_limit: 3
+  emergency_max_model_requests: 160

@@ -1,0 +1,21 @@
+{
+  "purpose": "Source SHA-256 hashes of the four unmodified confirmed-failure records used in recovery.",
+  "records": [
+    {
+      "path": "results_exploratory_remaining_1680_v18_gpt6_low/explore2100__mutual__f018__rho075__r00.json",
+      "sha256": "835e67b5ece1ffb5cee6114c7a46280a43df82d40948e0f556ac0b3eecbc0649"
+    },
+    {
+      "path": "results_exploratory_remaining_1680_v18_gpt6_low/explore2100__mutual__f022__rho075__r00.json",
+      "sha256": "4d2274e9e190fc7c4046b3423186814b96aed06b35721385948eee986f80f240"
+    },
+    {
+      "path": "results_exploratory_remaining_1680_v18_gpt6_low/explore2100__mutual__f047__rho075__r00.json",
+      "sha256": "0d6fdc40471ecd8d388f4d9250eb3b0cf0f5efc3c9180c069a2b3d57e46c5846"
+    },
+    {
+      "path": "results_exploratory_remaining_1680_v18_gpt6_low/explore2100__mutual__f056__rho050__r00.json",
+      "sha256": "5dae72bf8a630a3942621b41ce9e6bf90ac6ad0e6ecf7fb57504cd2afa14e1b1"
+    }
+  ]
+}

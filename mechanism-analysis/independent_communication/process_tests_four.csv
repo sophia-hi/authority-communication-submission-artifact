@@ -1,0 +1,5 @@
+metric,independent,mutual,independent_only,mutual_only,p_value,p_holm_four
+detected_profit_output_error,29,19,23,13,0.13249816396273675,0.2649963279254735
+wrong_after_correct_values,11,1,11,1,0.00634765625,0.01904296875
+other_final_failure,6,3,5,2,0.453125,0.453125
+ranking_action_break,13,1,13,1,0.0018310546875,0.00732421875

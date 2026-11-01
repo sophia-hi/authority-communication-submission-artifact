@@ -1,0 +1,49 @@
+family,org,review_note
+1,independent,"Reviewed as local-profit expressions, with policy fixed costs and numerical outputs. Source calls/items: C3.3; C3.4."
+3,mutual,Branch 1 unit margins omit policy discounts.
+5,independent,"Reviewed as local-profit expressions, with policy fixed costs and numerical outputs. Source calls/items: C3.1; C3.2."
+6,independent,"Reviewed as local-profit expressions, with policy fixed costs and numerical outputs. Source calls/items: C3.1; C3.2."
+7,independent,"Reviewed as local-profit expressions, with policy fixed costs and numerical outputs. Source calls/items: C4.3; C4.4."
+7,mutual,Branch 1 profit expressions omit returns.
+9,mutual,Branch 2 profit expressions omit returns.
+13,mutual,Branch 1 profit expressions omit returns.
+17,independent,"Reviewed as local-profit expressions, with policy fixed costs and numerical outputs. Source calls/items: C1.8; C1.9."
+17,mutual,Branch 2 standard realized price omits the signed price change.
+18,mutual,Branch 1 unit margins omit policy discounts.
+19,mutual,Branch 1 profit expressions omit policy discounts.
+25,independent,"Reviewed as local-profit expressions, with policy fixed costs and numerical outputs. Source calls/items: C4.1; C4.2."
+27,independent,"Reviewed as local-profit expressions, with policy fixed costs and numerical outputs. Source calls/items: C3.1; C3.2."
+30,independent,"Reviewed as local-profit expressions, with policy fixed costs and numerical outputs. Source calls/items: C4.4; C4.5; C5.3."
+31,mutual,Branch 1 profit expressions omit discounts and returns.
+35,independent,"Reviewed as local-profit expressions, with policy fixed costs and numerical outputs. Source calls/items: C3.3."
+42,independent,"Reviewed as local-profit expressions, with policy fixed costs and numerical outputs. Source calls/items: C5.1; C5.2."
+43,independent,"Reviewed as local-profit expressions, with policy fixed costs and numerical outputs. Source calls/items: C2.1; C2.2; C2.3; C2.4."
+44,independent,"Reviewed as local-profit expressions, with policy fixed costs and numerical outputs. Source calls/items: C3.1; C3.2."
+46,independent,"Reviewed as local-profit expressions, with policy fixed costs and numerical outputs. Source calls/items: C2.10."
+49,mutual,Branch 2 standard profit initially omits its discount; C3.2 corrects it before filing. Any-error indicator remains one.
+52,independent,"Reviewed as local-profit expressions, with policy fixed costs and numerical outputs. Source calls/items: C2.12; C2.13; C5.1; C5.2."
+52,mutual,Branch 2 profit expressions use posted prices rather than realized prices.
+53,independent,"Reviewed as local-profit expressions, with policy fixed costs and numerical outputs. Source calls/items: C5.1; C5.2."
+54,independent,"Reviewed as local-profit expressions, with policy fixed costs and numerical outputs. Source calls/items: C5.1; C5.2."
+55,independent,"Reviewed as local-profit expressions, with policy fixed costs and numerical outputs. Source calls/items: C3.5; C3.6."
+57,independent,"Reviewed as local-profit expressions, with policy fixed costs and numerical outputs. Source calls/items: C3.3."
+63,mutual,Branch 2 uses incorrectly bound policy-specific discount inputs and obtains an incorrect ranking.
+64,independent,"Reviewed as local-profit expressions, with policy fixed costs and numerical outputs. Source calls/items: C4.1; C4.2."
+64,mutual,Branch 1 profit expressions omit returns.
+66,independent,"Reviewed as local-profit expressions, with policy fixed costs and numerical outputs. Source calls/items: C3.3; C3.4."
+67,mutual,Branch 1 profit expressions omit discounts.
+68,mutual,Branch 2 profit expressions omit returns.
+73,independent,"Reviewed as local-profit expressions, with policy fixed costs and numerical outputs. Source calls/items: C3.1; C3.2."
+74,independent,"Reviewed as local-profit expressions, with policy fixed costs and numerical outputs. Source calls/items: C4.1; C4.2."
+75,independent,"Reviewed as local-profit expressions, with policy fixed costs and numerical outputs. Source calls/items: C3.3; C3.4; C5.4."
+75,mutual,Branch 1 omits discounts; Branch 2 omits returns.
+76,independent,"Reviewed as local-profit expressions, with policy fixed costs and numerical outputs. Source calls/items: C5.1; C5.2."
+77,independent,"Reviewed as local-profit expressions, with policy fixed costs and numerical outputs. Source calls/items: C3.7; C3.8."
+86,independent,"Reviewed as local-profit expressions, with policy fixed costs and numerical outputs. Source calls/items: C5.1; C5.2; C5.3; C5.4."
+88,independent,"Reviewed as local-profit expressions, with policy fixed costs and numerical outputs. Source calls/items: C6.1; C6.2."
+88,mutual,Branch 1 multiplies units by a price-like quantity rather than net unit margin and obtains an incorrect ranking.
+89,mutual,Branch 2 profit expressions omit discounts.
+91,independent,"Reviewed as local-profit expressions, with policy fixed costs and numerical outputs. Source calls/items: C3.1; C3.2."
+93,mutual,Branch 1 profit expressions omit discounts.
+94,mutual,Branch 2 demand/margin inputs are incorrect and its computed policy ranking is reversed.
+97,independent,"Reviewed as local-profit expressions, with policy fixed costs and numerical outputs. Source calls/items: C4.1; C4.2."

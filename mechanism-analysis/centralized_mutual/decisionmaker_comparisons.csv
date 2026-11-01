@@ -1,0 +1,307 @@
+family,org,role,all_four,computed_best,aligned_comparison,aligned_best,ranking_correct,aligned_ranking_correct,final,optimal,exact,own_action_matches_computed_best,interaction_outputs
+1,centralized_two_way,Lead,True,AB,True,AB,True,True,AB,AB,True,True,8
+1,mutual,Branch 1 Specialist,False,,False,,False,False,AB,AB,True,,0
+1,mutual,Branch 2 Specialist,False,,True,BA,False,False,AB,AB,True,,5
+2,centralized_two_way,Lead,True,BB,True,BB,True,True,BB,BB,True,True,4
+2,mutual,Branch 1 Specialist,False,,False,,False,False,AA,BB,False,,4
+2,mutual,Branch 2 Specialist,False,,False,,False,False,AA,BB,False,,0
+3,centralized_two_way,Lead,False,,True,BA,False,True,BB,BA,False,,8
+3,mutual,Branch 1 Specialist,True,AB,True,AB,False,False,AA,BA,False,True,4
+3,mutual,Branch 2 Specialist,True,BA,True,BA,True,True,AA,BA,False,True,8
+4,centralized_two_way,Lead,False,,False,,False,False,BA,BA,True,,0
+4,mutual,Branch 1 Specialist,False,,False,,False,False,BA,BA,True,,0
+4,mutual,Branch 2 Specialist,False,,False,,False,False,BA,BA,True,,4
+5,centralized_two_way,Lead,True,BA,True,BA,True,True,BA,BA,True,True,8
+5,mutual,Branch 1 Specialist,True,BA,True,BA,True,True,BA,BA,True,True,8
+5,mutual,Branch 2 Specialist,False,,False,,False,False,BA,BA,True,,0
+6,centralized_two_way,Lead,False,,False,,False,False,BB,AA,False,,18
+6,mutual,Branch 1 Specialist,True,AA,True,AA,True,True,AA,AA,True,True,4
+6,mutual,Branch 2 Specialist,True,AA,True,AA,True,True,AA,AA,True,True,12
+7,centralized_two_way,Lead,True,BA,True,BA,True,True,BA,BA,True,True,4
+7,mutual,Branch 1 Specialist,True,BA,True,BA,True,True,BA,BA,True,True,13
+7,mutual,Branch 2 Specialist,False,,True,BA,False,True,BA,BA,True,,2
+8,centralized_two_way,Lead,True,AB,True,BB,False,True,AB,BB,False,True,11
+8,mutual,Branch 1 Specialist,True,BB,True,BB,True,True,BB,BB,True,True,4
+8,mutual,Branch 2 Specialist,False,,False,,False,False,BB,BB,True,,0
+9,centralized_two_way,Lead,False,,False,,False,False,AA,AA,True,,0
+9,mutual,Branch 1 Specialist,False,,False,,False,False,AA,AA,True,,4
+9,mutual,Branch 2 Specialist,False,,False,,False,False,AA,AA,True,,0
+10,centralized_two_way,Lead,False,,False,,False,False,AA,AA,True,,4
+10,mutual,Branch 1 Specialist,False,,False,,False,False,AB,AA,False,,0
+10,mutual,Branch 2 Specialist,True,AA,True,AA,True,True,AB,AA,False,False,8
+11,centralized_two_way,Lead,True,BB,True,AB,False,True,AB,AB,True,False,4
+11,mutual,Branch 1 Specialist,False,,False,,False,False,BB,AB,False,,3
+11,mutual,Branch 2 Specialist,True,BB,True,BA,False,False,BB,AB,False,True,6
+12,centralized_two_way,Lead,True,AB,True,BB,False,True,BA,BB,False,False,4
+12,mutual,Branch 1 Specialist,False,,False,,False,False,BB,BB,True,,4
+12,mutual,Branch 2 Specialist,False,,False,,False,False,BB,BB,True,,0
+13,centralized_two_way,Lead,True,BB,True,BB,True,True,BB,BB,True,True,4
+13,mutual,Branch 1 Specialist,False,,False,,False,False,BB,BB,True,,0
+13,mutual,Branch 2 Specialist,True,BB,True,BB,True,True,BB,BB,True,True,4
+14,centralized_two_way,Lead,True,AB,True,AB,True,True,AB,AB,True,True,4
+14,mutual,Branch 1 Specialist,True,AB,True,AB,True,True,AB,AB,True,True,8
+14,mutual,Branch 2 Specialist,False,,False,,False,False,AB,AB,True,,0
+15,centralized_two_way,Lead,True,AA,True,AA,True,True,AA,AA,True,True,10
+15,mutual,Branch 1 Specialist,False,,False,,False,False,AA,AA,True,,0
+15,mutual,Branch 2 Specialist,True,AA,True,AA,True,True,AA,AA,True,True,8
+16,centralized_two_way,Lead,True,BA,True,BA,True,True,BA,BA,True,True,8
+16,mutual,Branch 1 Specialist,False,,False,,False,False,AA,BA,False,,0
+16,mutual,Branch 2 Specialist,True,AA,True,BA,False,True,AA,BA,False,True,4
+17,centralized_two_way,Lead,True,BA,True,BA,False,False,AA,AB,False,False,8
+17,mutual,Branch 1 Specialist,False,,True,AB,False,True,AB,AB,True,,3
+17,mutual,Branch 2 Specialist,False,,False,,False,False,AB,AB,True,,0
+18,centralized_two_way,Lead,True,AB,True,AB,True,True,AB,AB,True,True,10
+18,mutual,Branch 1 Specialist,False,,False,,False,False,BB,AB,False,,5
+18,mutual,Branch 2 Specialist,True,AB,True,AB,True,True,BB,AB,False,True,8
+19,centralized_two_way,Lead,True,AA,True,AB,False,True,AA,AB,False,True,7
+19,mutual,Branch 1 Specialist,False,,False,,False,False,AB,AB,True,,5
+19,mutual,Branch 2 Specialist,False,,False,,False,False,AB,AB,True,,0
+20,centralized_two_way,Lead,False,,True,AB,False,True,AB,AB,True,,11
+20,mutual,Branch 1 Specialist,True,AB,True,AB,True,True,AB,AB,True,True,7
+20,mutual,Branch 2 Specialist,False,,False,,False,False,AB,AB,True,,0
+21,centralized_two_way,Lead,False,,False,,False,False,BA,BA,True,,4
+21,mutual,Branch 1 Specialist,True,BA,True,BA,True,True,BA,BA,True,True,6
+21,mutual,Branch 2 Specialist,True,BA,True,BA,True,True,BA,BA,True,True,4
+22,centralized_two_way,Lead,True,BB,True,BB,True,True,BB,BB,True,True,18
+22,mutual,Branch 1 Specialist,True,BB,True,BB,True,True,BB,BB,True,True,8
+22,mutual,Branch 2 Specialist,False,,False,,False,False,BB,BB,True,,0
+23,centralized_two_way,Lead,False,,False,,False,False,AA,AA,True,,4
+23,mutual,Branch 1 Specialist,False,,False,,False,False,BB,AA,False,,8
+23,mutual,Branch 2 Specialist,False,,False,,False,False,BB,AA,False,,0
+24,centralized_two_way,Lead,True,BB,True,BB,True,True,BB,BB,True,True,4
+24,mutual,Branch 1 Specialist,True,BB,True,BB,True,True,BB,BB,True,True,6
+24,mutual,Branch 2 Specialist,True,BB,True,BB,True,True,BB,BB,True,True,4
+25,centralized_two_way,Lead,True,BA,True,BA,True,True,BA,BA,True,True,4
+25,mutual,Branch 1 Specialist,True,AA,True,BA,False,True,AB,BA,False,True,4
+25,mutual,Branch 2 Specialist,True,AA,True,BA,False,True,AB,BA,False,False,4
+26,centralized_two_way,Lead,False,,False,,False,False,BA,BA,True,,6
+26,mutual,Branch 1 Specialist,True,BA,True,BA,True,True,BA,BA,True,True,4
+26,mutual,Branch 2 Specialist,False,,False,,False,False,BA,BA,True,,0
+27,centralized_two_way,Lead,False,,False,,False,False,AA,AA,True,,0
+27,mutual,Branch 1 Specialist,False,,False,,False,False,AA,AA,True,,4
+27,mutual,Branch 2 Specialist,False,,False,,False,False,AA,AA,True,,11
+28,centralized_two_way,Lead,True,AB,True,AB,True,True,AB,AB,True,True,14
+28,mutual,Branch 1 Specialist,True,AB,True,AB,True,True,AA,AB,False,True,4
+28,mutual,Branch 2 Specialist,True,AB,True,AB,True,True,AA,AB,False,False,4
+29,centralized_two_way,Lead,False,,False,,False,False,AB,AB,True,,0
+29,mutual,Branch 1 Specialist,True,AB,True,AB,True,True,AB,AB,True,True,8
+29,mutual,Branch 2 Specialist,True,BB,True,AB,False,True,AB,AB,True,True,4
+30,centralized_two_way,Lead,True,AB,True,AB,True,True,AB,AB,True,True,12
+30,mutual,Branch 1 Specialist,False,,False,,False,False,BA,AB,False,,0
+30,mutual,Branch 2 Specialist,True,AB,True,AB,True,True,BA,AB,False,False,11
+31,centralized_two_way,Lead,True,BB,True,BB,True,True,BB,BB,True,True,8
+31,mutual,Branch 1 Specialist,False,,False,,False,False,BB,BB,True,,0
+31,mutual,Branch 2 Specialist,False,,False,,False,False,BB,BB,True,,6
+32,centralized_two_way,Lead,False,,False,,False,False,AA,AA,True,,8
+32,mutual,Branch 1 Specialist,False,,False,,False,False,AA,AA,True,,4
+32,mutual,Branch 2 Specialist,False,,False,,False,False,AA,AA,True,,6
+33,centralized_two_way,Lead,False,,False,,False,False,BB,BB,True,,4
+33,mutual,Branch 1 Specialist,True,BB,True,BB,True,True,BB,BB,True,True,7
+33,mutual,Branch 2 Specialist,True,BB,True,BB,True,True,BB,BB,True,True,4
+34,centralized_two_way,Lead,False,,False,,False,False,AA,AA,True,,0
+34,mutual,Branch 1 Specialist,False,,False,,False,False,AA,AA,True,,0
+34,mutual,Branch 2 Specialist,False,,False,,False,False,AA,AA,True,,4
+35,centralized_two_way,Lead,True,BB,True,BB,True,True,BB,BB,True,True,8
+35,mutual,Branch 1 Specialist,True,BB,True,BB,True,True,BB,BB,True,True,8
+35,mutual,Branch 2 Specialist,True,BB,True,BB,True,True,BB,BB,True,True,8
+36,centralized_two_way,Lead,False,,False,,False,False,BA,BA,True,,9
+36,mutual,Branch 1 Specialist,True,AB,True,AB,False,False,AB,BA,False,True,8
+36,mutual,Branch 2 Specialist,False,,False,,False,False,AB,BA,False,,0
+37,centralized_two_way,Lead,True,AB,True,AB,True,True,AB,AB,True,True,4
+37,mutual,Branch 1 Specialist,False,,False,,False,False,BA,AB,False,,0
+37,mutual,Branch 2 Specialist,False,,False,,False,False,BA,AB,False,,10
+38,centralized_two_way,Lead,True,AA,True,AA,True,True,AA,AA,True,True,8
+38,mutual,Branch 1 Specialist,False,,False,,False,False,AA,AA,True,,0
+38,mutual,Branch 2 Specialist,False,,True,AA,False,True,AA,AA,True,,2
+39,centralized_two_way,Lead,True,AA,True,BA,False,True,AB,BA,False,False,12
+39,mutual,Branch 1 Specialist,True,AA,True,BA,False,True,AB,BA,False,True,4
+39,mutual,Branch 2 Specialist,False,,False,,False,False,AB,BA,False,,0
+40,centralized_two_way,Lead,True,AA,True,AA,True,True,AA,AA,True,True,8
+40,mutual,Branch 1 Specialist,False,,False,,False,False,AA,AA,True,,0
+40,mutual,Branch 2 Specialist,False,,False,,False,False,AA,AA,True,,0
+41,centralized_two_way,Lead,False,,False,,False,False,AA,AA,True,,0
+41,mutual,Branch 1 Specialist,True,AA,True,AA,True,True,AA,AA,True,True,8
+41,mutual,Branch 2 Specialist,False,,False,,False,False,AA,AA,True,,0
+42,centralized_two_way,Lead,False,,False,,False,False,AA,BA,False,,9
+42,mutual,Branch 1 Specialist,True,BA,True,BA,True,True,BA,BA,True,True,12
+42,mutual,Branch 2 Specialist,False,,False,,False,False,BA,BA,True,,6
+43,centralized_two_way,Lead,False,,False,,False,False,AA,BA,False,,14
+43,mutual,Branch 1 Specialist,False,,False,,False,False,BB,BA,False,,4
+43,mutual,Branch 2 Specialist,True,BA,True,BA,True,True,BB,BA,False,False,4
+44,centralized_two_way,Lead,False,,False,,False,False,BB,BB,True,,14
+44,mutual,Branch 1 Specialist,False,,False,,False,False,BB,BB,True,,4
+44,mutual,Branch 2 Specialist,False,,False,,False,False,BB,BB,True,,9
+45,centralized_two_way,Lead,True,AB,True,AB,True,True,AB,AB,True,True,12
+45,mutual,Branch 1 Specialist,False,,False,,False,False,BA,AB,False,,11
+45,mutual,Branch 2 Specialist,True,AB,True,AB,True,True,BA,AB,False,False,8
+46,centralized_two_way,Lead,False,,False,,False,False,AB,AB,True,,3
+46,mutual,Branch 1 Specialist,False,,False,,False,False,AB,AB,True,,0
+46,mutual,Branch 2 Specialist,True,AB,True,AB,True,True,AB,AB,True,True,8
+47,centralized_two_way,Lead,False,,False,,False,False,BB,BB,True,,12
+47,mutual,Branch 1 Specialist,False,,False,,False,False,BB,BB,True,,0
+47,mutual,Branch 2 Specialist,True,BB,True,BB,True,True,BB,BB,True,True,8
+48,centralized_two_way,Lead,False,,False,,False,False,BA,BA,True,,3
+48,mutual,Branch 1 Specialist,False,,False,,False,False,AB,BA,False,,4
+48,mutual,Branch 2 Specialist,True,AB,True,AB,False,False,AB,BA,False,True,8
+49,centralized_two_way,Lead,False,,False,,False,False,AA,AA,True,,8
+49,mutual,Branch 1 Specialist,False,,True,AA,False,True,AA,AA,True,,5
+49,mutual,Branch 2 Specialist,True,AA,True,AA,True,True,AA,AA,True,True,8
+50,centralized_two_way,Lead,False,,False,,False,False,AA,AA,True,,5
+50,mutual,Branch 1 Specialist,True,AA,True,AA,True,True,AA,AA,True,True,8
+50,mutual,Branch 2 Specialist,False,,False,,False,False,AA,AA,True,,0
+51,centralized_two_way,Lead,True,AB,True,AB,True,True,AB,AB,True,True,14
+51,mutual,Branch 1 Specialist,False,,False,,False,False,AB,AB,True,,0
+51,mutual,Branch 2 Specialist,True,AB,True,AB,True,True,AB,AB,True,True,4
+52,centralized_two_way,Lead,False,,False,,False,False,AB,AB,True,,8
+52,mutual,Branch 1 Specialist,False,,False,,False,False,AB,AB,True,,0
+52,mutual,Branch 2 Specialist,False,,False,,False,False,AB,AB,True,,0
+53,centralized_two_way,Lead,True,BB,True,BB,True,True,BB,BB,True,True,10
+53,mutual,Branch 1 Specialist,False,,False,,False,False,BB,BB,True,,0
+53,mutual,Branch 2 Specialist,True,BB,True,BB,True,True,BB,BB,True,True,16
+54,centralized_two_way,Lead,True,AA,True,AA,True,True,AA,AA,True,True,8
+54,mutual,Branch 1 Specialist,True,AA,True,AA,True,True,AA,AA,True,True,8
+54,mutual,Branch 2 Specialist,False,,False,,False,False,AA,AA,True,,0
+55,centralized_two_way,Lead,True,AA,True,AA,True,True,AA,AA,True,True,11
+55,mutual,Branch 1 Specialist,False,,False,,False,False,BB,AA,False,,0
+55,mutual,Branch 2 Specialist,False,,False,,False,False,BB,AA,False,,4
+56,centralized_two_way,Lead,True,AA,True,AB,False,False,AA,BA,False,True,4
+56,mutual,Branch 1 Specialist,True,AA,True,BA,False,True,AA,BA,False,True,4
+56,mutual,Branch 2 Specialist,False,,False,,False,False,AA,BA,False,,0
+57,centralized_two_way,Lead,False,,False,,False,False,BB,BB,True,,4
+57,mutual,Branch 1 Specialist,True,BB,True,BB,True,True,BB,BB,True,True,4
+57,mutual,Branch 2 Specialist,True,BB,True,BB,True,True,BB,BB,True,True,4
+58,centralized_two_way,Lead,True,BB,True,BB,True,True,BB,BB,True,True,8
+58,mutual,Branch 1 Specialist,False,,False,,False,False,BB,BB,True,,0
+58,mutual,Branch 2 Specialist,False,,False,,False,False,BB,BB,True,,4
+59,centralized_two_way,Lead,False,,False,,False,False,BA,BA,True,,6
+59,mutual,Branch 1 Specialist,False,,False,,False,False,BA,BA,True,,6
+59,mutual,Branch 2 Specialist,False,,False,,False,False,BA,BA,True,,8
+60,centralized_two_way,Lead,True,BB,True,BB,True,True,BB,BB,True,True,4
+60,mutual,Branch 1 Specialist,True,BB,True,BB,True,True,BB,BB,True,True,4
+60,mutual,Branch 2 Specialist,True,BB,True,BB,True,True,BB,BB,True,True,8
+61,centralized_two_way,Lead,True,AB,True,AB,True,True,AB,AB,True,True,6
+61,mutual,Branch 1 Specialist,False,,False,,False,False,BA,AB,False,,0
+61,mutual,Branch 2 Specialist,False,,False,,False,False,BA,AB,False,,8
+62,centralized_two_way,Lead,False,,False,,False,False,AA,AA,True,,6
+62,mutual,Branch 1 Specialist,False,,False,,False,False,BA,AA,False,,0
+62,mutual,Branch 2 Specialist,False,,True,BB,False,False,BA,AA,False,,8
+63,centralized_two_way,Lead,True,AB,True,AB,False,False,AB,BA,False,True,8
+63,mutual,Branch 1 Specialist,True,BA,True,BA,True,True,BA,BA,True,True,4
+63,mutual,Branch 2 Specialist,False,,False,,False,False,BA,BA,True,,0
+64,centralized_two_way,Lead,True,BA,True,BA,False,False,BA,AB,False,True,10
+64,mutual,Branch 1 Specialist,True,AB,True,AB,True,True,AB,AB,True,True,8
+64,mutual,Branch 2 Specialist,False,,False,,False,False,AB,AB,True,,4
+65,centralized_two_way,Lead,True,BA,True,BA,True,True,BA,BA,True,True,4
+65,mutual,Branch 1 Specialist,False,,False,,False,False,AA,BA,False,,8
+65,mutual,Branch 2 Specialist,False,,False,,False,False,AA,BA,False,,0
+66,centralized_two_way,Lead,True,BA,True,BA,True,True,BA,BA,True,True,10
+66,mutual,Branch 1 Specialist,True,AA,True,BA,False,True,AB,BA,False,True,13
+66,mutual,Branch 2 Specialist,False,,False,,False,False,AB,BA,False,,0
+67,centralized_two_way,Lead,True,BB,True,AB,False,True,AB,AB,True,False,6
+67,mutual,Branch 1 Specialist,True,AB,True,AB,True,True,AB,AB,True,True,14
+67,mutual,Branch 2 Specialist,True,AB,True,AB,True,True,AB,AB,True,True,10
+68,centralized_two_way,Lead,False,,False,,False,False,BB,BB,True,,4
+68,mutual,Branch 1 Specialist,True,BB,True,BB,True,True,BB,BB,True,True,8
+68,mutual,Branch 2 Specialist,True,BB,True,BB,True,True,BB,BB,True,True,4
+69,centralized_two_way,Lead,True,AA,True,BA,False,True,AB,BA,False,False,4
+69,mutual,Branch 1 Specialist,False,,False,,False,False,AB,BA,False,,4
+69,mutual,Branch 2 Specialist,True,AA,True,BA,False,True,AB,BA,False,False,4
+70,centralized_two_way,Lead,True,BB,True,BB,True,True,BB,BB,True,True,4
+70,mutual,Branch 1 Specialist,True,BB,True,BB,True,True,BB,BB,True,True,4
+70,mutual,Branch 2 Specialist,False,,False,,False,False,BB,BB,True,,0
+71,centralized_two_way,Lead,False,,False,,False,False,BB,BB,True,,4
+71,mutual,Branch 1 Specialist,True,BB,True,BB,True,True,BB,BB,True,True,4
+71,mutual,Branch 2 Specialist,True,BB,True,BB,True,True,BB,BB,True,True,4
+72,centralized_two_way,Lead,True,BA,True,BA,False,False,AB,AB,True,False,4
+72,mutual,Branch 1 Specialist,False,,False,,False,False,AB,AB,True,,15
+72,mutual,Branch 2 Specialist,False,,False,,False,False,AB,AB,True,,2
+73,centralized_two_way,Lead,True,AB,True,AB,True,True,AB,AB,True,True,8
+73,mutual,Branch 1 Specialist,False,,False,,False,False,AB,AB,True,,2
+73,mutual,Branch 2 Specialist,True,AB,True,AB,True,True,AB,AB,True,True,8
+74,centralized_two_way,Lead,False,,False,,False,False,AA,AA,True,,8
+74,mutual,Branch 1 Specialist,False,,False,,False,False,AA,AA,True,,4
+74,mutual,Branch 2 Specialist,True,AA,True,AA,True,True,AA,AA,True,True,4
+75,centralized_two_way,Lead,True,AA,True,AA,True,True,AA,AA,True,True,11
+75,mutual,Branch 1 Specialist,False,,True,AA,False,True,BB,AA,False,,3
+75,mutual,Branch 2 Specialist,False,,False,,False,False,BB,AA,False,,0
+76,centralized_two_way,Lead,True,AA,True,AA,True,True,AA,AA,True,True,6
+76,mutual,Branch 1 Specialist,True,AA,True,AA,True,True,AA,AA,True,True,4
+76,mutual,Branch 2 Specialist,False,,False,,False,False,AA,AA,True,,0
+77,centralized_two_way,Lead,False,,False,,False,False,BB,BB,True,,4
+77,mutual,Branch 1 Specialist,False,,False,,False,False,AA,BB,False,,0
+77,mutual,Branch 2 Specialist,False,,False,,False,False,AA,BB,False,,0
+78,centralized_two_way,Lead,True,BB,True,BB,True,True,BB,BB,True,True,4
+78,mutual,Branch 1 Specialist,True,BB,True,BB,True,True,BB,BB,True,True,8
+78,mutual,Branch 2 Specialist,True,BB,True,BB,True,True,BB,BB,True,True,4
+79,centralized_two_way,Lead,True,AA,True,AA,True,True,AA,AA,True,True,16
+79,mutual,Branch 1 Specialist,False,,False,,False,False,AA,AA,True,,3
+79,mutual,Branch 2 Specialist,False,,False,,False,False,AA,AA,True,,0
+80,centralized_two_way,Lead,True,AA,True,AA,True,True,AA,AA,True,True,4
+80,mutual,Branch 1 Specialist,False,,False,,False,False,AA,AA,True,,0
+80,mutual,Branch 2 Specialist,True,AA,True,AA,True,True,AA,AA,True,True,6
+81,centralized_two_way,Lead,False,,False,,False,False,AB,AB,True,,8
+81,mutual,Branch 1 Specialist,False,,False,,False,False,AB,AB,True,,0
+81,mutual,Branch 2 Specialist,False,,False,,False,False,AB,AB,True,,16
+82,centralized_two_way,Lead,True,BA,True,BA,True,True,AB,BA,False,False,8
+82,mutual,Branch 1 Specialist,True,BA,True,BA,True,True,BA,BA,True,True,4
+82,mutual,Branch 2 Specialist,False,,False,,False,False,BA,BA,True,,0
+83,centralized_two_way,Lead,False,,True,AB,False,True,BB,AB,False,,4
+83,mutual,Branch 1 Specialist,False,,False,,False,False,BB,AB,False,,7
+83,mutual,Branch 2 Specialist,False,,False,,False,False,BB,AB,False,,0
+84,centralized_two_way,Lead,True,BA,True,BA,True,True,AB,BA,False,False,6
+84,mutual,Branch 1 Specialist,False,,False,,False,False,BB,BA,False,,4
+84,mutual,Branch 2 Specialist,False,,False,,False,False,BB,BA,False,,2
+85,centralized_two_way,Lead,True,AA,True,AA,True,True,AA,AA,True,True,4
+85,mutual,Branch 1 Specialist,False,,False,,False,False,AA,AA,True,,0
+85,mutual,Branch 2 Specialist,True,AA,True,AA,True,True,AA,AA,True,True,4
+86,centralized_two_way,Lead,False,,False,,False,False,BA,BA,True,,20
+86,mutual,Branch 1 Specialist,False,,False,,False,False,AA,BA,False,,2
+86,mutual,Branch 2 Specialist,True,AA,True,BA,False,True,AA,BA,False,True,4
+87,centralized_two_way,Lead,False,,True,BB,False,True,BB,BB,True,,4
+87,mutual,Branch 1 Specialist,True,BB,True,BB,True,True,BB,BB,True,True,4
+87,mutual,Branch 2 Specialist,True,BB,True,BB,True,True,BB,BB,True,True,4
+88,centralized_two_way,Lead,False,,False,,False,False,AB,AB,True,,4
+88,mutual,Branch 1 Specialist,True,AB,True,AB,True,True,AA,AB,False,True,4
+88,mutual,Branch 2 Specialist,False,,False,,False,False,AA,AB,False,,4
+89,centralized_two_way,Lead,False,,False,,False,False,BA,BA,True,,8
+89,mutual,Branch 1 Specialist,False,,False,,False,False,BA,BA,True,,12
+89,mutual,Branch 2 Specialist,True,BA,True,BA,True,True,BA,BA,True,True,4
+90,centralized_two_way,Lead,True,AB,True,AB,True,True,AB,AB,True,True,6
+90,mutual,Branch 1 Specialist,False,,False,,False,False,AB,AB,True,,8
+90,mutual,Branch 2 Specialist,False,,False,,False,False,AB,AB,True,,0
+91,centralized_two_way,Lead,True,BB,True,BB,True,True,BB,BB,True,True,4
+91,mutual,Branch 1 Specialist,True,BB,True,BB,True,True,BB,BB,True,True,5
+91,mutual,Branch 2 Specialist,False,,False,,False,False,BB,BB,True,,0
+92,centralized_two_way,Lead,True,BA,True,BA,True,True,BA,BA,True,True,10
+92,mutual,Branch 1 Specialist,True,BB,True,BA,False,True,BB,BA,False,True,4
+92,mutual,Branch 2 Specialist,False,,False,,False,False,BB,BA,False,,0
+93,centralized_two_way,Lead,True,BA,True,BA,True,True,BA,BA,True,True,4
+93,mutual,Branch 1 Specialist,False,,False,,False,False,BB,BA,False,,0
+93,mutual,Branch 2 Specialist,False,,False,,False,False,BB,BA,False,,4
+94,centralized_two_way,Lead,True,BB,True,BB,True,True,BB,BB,True,True,4
+94,mutual,Branch 1 Specialist,False,,False,,False,False,BB,BB,True,,0
+94,mutual,Branch 2 Specialist,True,BB,True,BB,True,True,BB,BB,True,True,4
+95,centralized_two_way,Lead,False,,False,,False,False,AA,AA,True,,11
+95,mutual,Branch 1 Specialist,False,,False,,False,False,AA,AA,True,,2
+95,mutual,Branch 2 Specialist,True,AA,True,AA,True,True,AA,AA,True,True,6
+96,centralized_two_way,Lead,True,BB,True,BB,True,True,BB,BB,True,True,4
+96,mutual,Branch 1 Specialist,False,,False,,False,False,BB,BB,True,,0
+96,mutual,Branch 2 Specialist,True,AA,True,AA,False,False,BB,BB,True,False,6
+97,centralized_two_way,Lead,False,,False,,False,False,BA,BA,True,,4
+97,mutual,Branch 1 Specialist,False,,False,,False,False,AB,BA,False,,2
+97,mutual,Branch 2 Specialist,False,,False,,False,False,AB,BA,False,,0
+98,centralized_two_way,Lead,True,AA,True,AB,False,True,AB,AB,True,False,4
+98,mutual,Branch 1 Specialist,False,,False,,False,False,AB,AB,True,,0
+98,mutual,Branch 2 Specialist,True,AB,True,AB,True,True,AB,AB,True,True,4
+99,centralized_two_way,Lead,True,BB,True,BB,True,True,AB,BB,False,False,8
+99,mutual,Branch 1 Specialist,True,BB,True,BB,True,True,BB,BB,True,True,4
+99,mutual,Branch 2 Specialist,True,BB,True,BB,True,True,BB,BB,True,True,4
+100,centralized_two_way,Lead,False,,True,BB,False,True,BB,BB,True,,8
+100,mutual,Branch 1 Specialist,True,BB,True,BB,True,True,BA,BB,False,True,10
+100,mutual,Branch 2 Specialist,False,,False,,False,False,BA,BB,False,,0
+101,centralized_two_way,Lead,True,AB,True,AB,True,True,AA,AB,False,False,8
+101,mutual,Branch 1 Specialist,False,,False,,False,False,AB,AB,True,,0
+101,mutual,Branch 2 Specialist,False,,False,,False,False,AB,AB,True,,10
+102,centralized_two_way,Lead,True,AA,True,AA,True,True,AA,AA,True,True,4
+102,mutual,Branch 1 Specialist,False,,False,,False,False,AA,AA,True,,0
+102,mutual,Branch 2 Specialist,True,AA,True,AA,True,True,AA,AA,True,True,4

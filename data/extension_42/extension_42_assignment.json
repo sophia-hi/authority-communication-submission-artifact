@@ -1,0 +1,467 @@
+{
+  "label": "exploratory_extension_42_plus_unchanged_60",
+  "assignments": [
+    {
+      "family_id": 61,
+      "candidate_id": 177056,
+      "lead_branch_index": 0,
+      "branch1_premium_label": "A",
+      "branch2_premium_label": "B",
+      "economic_stratum": {
+        "substantive_rho1_optimum": "premium|premium",
+        "first_switch_rho": 0.25
+      }
+    },
+    {
+      "family_id": 62,
+      "candidate_id": 177052,
+      "lead_branch_index": 1,
+      "branch1_premium_label": "B",
+      "branch2_premium_label": "B",
+      "economic_stratum": {
+        "substantive_rho1_optimum": "standard|standard",
+        "first_switch_rho": 0.25
+      }
+    },
+    {
+      "family_id": 63,
+      "candidate_id": 177178,
+      "lead_branch_index": 0,
+      "branch1_premium_label": "B",
+      "branch2_premium_label": "A",
+      "economic_stratum": {
+        "substantive_rho1_optimum": "premium|premium",
+        "first_switch_rho": 0.5
+      }
+    },
+    {
+      "family_id": 64,
+      "candidate_id": 177627,
+      "lead_branch_index": 0,
+      "branch1_premium_label": "B",
+      "branch2_premium_label": "A",
+      "economic_stratum": {
+        "substantive_rho1_optimum": "standard|standard",
+        "first_switch_rho": 0.5
+      }
+    },
+    {
+      "family_id": 65,
+      "candidate_id": 192010,
+      "lead_branch_index": 1,
+      "branch1_premium_label": "B",
+      "branch2_premium_label": "A",
+      "economic_stratum": {
+        "substantive_rho1_optimum": "premium|premium",
+        "first_switch_rho": 0.75
+      }
+    },
+    {
+      "family_id": 66,
+      "candidate_id": 186544,
+      "lead_branch_index": 1,
+      "branch1_premium_label": "A",
+      "branch2_premium_label": "B",
+      "economic_stratum": {
+        "substantive_rho1_optimum": "standard|standard",
+        "first_switch_rho": 0.75
+      }
+    },
+    {
+      "family_id": 67,
+      "candidate_id": 177096,
+      "lead_branch_index": 1,
+      "branch1_premium_label": "A",
+      "branch2_premium_label": "B",
+      "economic_stratum": {
+        "substantive_rho1_optimum": "premium|premium",
+        "first_switch_rho": 0.25
+      }
+    },
+    {
+      "family_id": 68,
+      "candidate_id": 178010,
+      "lead_branch_index": 0,
+      "branch1_premium_label": "A",
+      "branch2_premium_label": "A",
+      "economic_stratum": {
+        "substantive_rho1_optimum": "standard|standard",
+        "first_switch_rho": 0.25
+      }
+    },
+    {
+      "family_id": 69,
+      "candidate_id": 177277,
+      "lead_branch_index": 0,
+      "branch1_premium_label": "B",
+      "branch2_premium_label": "A",
+      "economic_stratum": {
+        "substantive_rho1_optimum": "premium|premium",
+        "first_switch_rho": 0.5
+      }
+    },
+    {
+      "family_id": 70,
+      "candidate_id": 179871,
+      "lead_branch_index": 0,
+      "branch1_premium_label": "A",
+      "branch2_premium_label": "A",
+      "economic_stratum": {
+        "substantive_rho1_optimum": "standard|standard",
+        "first_switch_rho": 0.5
+      }
+    },
+    {
+      "family_id": 71,
+      "candidate_id": 192619,
+      "lead_branch_index": 1,
+      "branch1_premium_label": "B",
+      "branch2_premium_label": "B",
+      "economic_stratum": {
+        "substantive_rho1_optimum": "premium|premium",
+        "first_switch_rho": 0.75
+      }
+    },
+    {
+      "family_id": 72,
+      "candidate_id": 193512,
+      "lead_branch_index": 1,
+      "branch1_premium_label": "B",
+      "branch2_premium_label": "A",
+      "economic_stratum": {
+        "substantive_rho1_optimum": "standard|standard",
+        "first_switch_rho": 0.75
+      }
+    },
+    {
+      "family_id": 73,
+      "candidate_id": 177164,
+      "lead_branch_index": 1,
+      "branch1_premium_label": "A",
+      "branch2_premium_label": "B",
+      "economic_stratum": {
+        "substantive_rho1_optimum": "premium|premium",
+        "first_switch_rho": 0.25
+      }
+    },
+    {
+      "family_id": 74,
+      "candidate_id": 178346,
+      "lead_branch_index": 1,
+      "branch1_premium_label": "B",
+      "branch2_premium_label": "B",
+      "economic_stratum": {
+        "substantive_rho1_optimum": "standard|standard",
+        "first_switch_rho": 0.25
+      }
+    },
+    {
+      "family_id": 75,
+      "candidate_id": 177923,
+      "lead_branch_index": 1,
+      "branch1_premium_label": "A",
+      "branch2_premium_label": "A",
+      "economic_stratum": {
+        "substantive_rho1_optimum": "premium|premium",
+        "first_switch_rho": 0.5
+      }
+    },
+    {
+      "family_id": 76,
+      "candidate_id": 180620,
+      "lead_branch_index": 0,
+      "branch1_premium_label": "B",
+      "branch2_premium_label": "B",
+      "economic_stratum": {
+        "substantive_rho1_optimum": "standard|standard",
+        "first_switch_rho": 0.5
+      }
+    },
+    {
+      "family_id": 77,
+      "candidate_id": 202140,
+      "lead_branch_index": 1,
+      "branch1_premium_label": "B",
+      "branch2_premium_label": "B",
+      "economic_stratum": {
+        "substantive_rho1_optimum": "premium|premium",
+        "first_switch_rho": 0.75
+      }
+    },
+    {
+      "family_id": 78,
+      "candidate_id": 247052,
+      "lead_branch_index": 1,
+      "branch1_premium_label": "A",
+      "branch2_premium_label": "A",
+      "economic_stratum": {
+        "substantive_rho1_optimum": "standard|standard",
+        "first_switch_rho": 0.75
+      }
+    },
+    {
+      "family_id": 79,
+      "candidate_id": 177190,
+      "lead_branch_index": 0,
+      "branch1_premium_label": "A",
+      "branch2_premium_label": "A",
+      "economic_stratum": {
+        "substantive_rho1_optimum": "premium|premium",
+        "first_switch_rho": 0.25
+      }
+    },
+    {
+      "family_id": 80,
+      "candidate_id": 178424,
+      "lead_branch_index": 0,
+      "branch1_premium_label": "B",
+      "branch2_premium_label": "B",
+      "economic_stratum": {
+        "substantive_rho1_optimum": "standard|standard",
+        "first_switch_rho": 0.25
+      }
+    },
+    {
+      "family_id": 81,
+      "candidate_id": 177990,
+      "lead_branch_index": 1,
+      "branch1_premium_label": "A",
+      "branch2_premium_label": "B",
+      "economic_stratum": {
+        "substantive_rho1_optimum": "premium|premium",
+        "first_switch_rho": 0.5
+      }
+    },
+    {
+      "family_id": 82,
+      "candidate_id": 181217,
+      "lead_branch_index": 1,
+      "branch1_premium_label": "A",
+      "branch2_premium_label": "B",
+      "economic_stratum": {
+        "substantive_rho1_optimum": "standard|standard",
+        "first_switch_rho": 0.5
+      }
+    },
+    {
+      "family_id": 83,
+      "candidate_id": 203916,
+      "lead_branch_index": 0,
+      "branch1_premium_label": "A",
+      "branch2_premium_label": "B",
+      "economic_stratum": {
+        "substantive_rho1_optimum": "premium|premium",
+        "first_switch_rho": 0.75
+      }
+    },
+    {
+      "family_id": 84,
+      "candidate_id": 315079,
+      "lead_branch_index": 0,
+      "branch1_premium_label": "A",
+      "branch2_premium_label": "B",
+      "economic_stratum": {
+        "substantive_rho1_optimum": "standard|standard",
+        "first_switch_rho": 0.75
+      }
+    },
+    {
+      "family_id": 85,
+      "candidate_id": 177221,
+      "lead_branch_index": 1,
+      "branch1_premium_label": "A",
+      "branch2_premium_label": "A",
+      "economic_stratum": {
+        "substantive_rho1_optimum": "premium|premium",
+        "first_switch_rho": 0.25
+      }
+    },
+    {
+      "family_id": 86,
+      "candidate_id": 178457,
+      "lead_branch_index": 1,
+      "branch1_premium_label": "A",
+      "branch2_premium_label": "B",
+      "economic_stratum": {
+        "substantive_rho1_optimum": "standard|standard",
+        "first_switch_rho": 0.25
+      }
+    },
+    {
+      "family_id": 87,
+      "candidate_id": 178213,
+      "lead_branch_index": 1,
+      "branch1_premium_label": "B",
+      "branch2_premium_label": "B",
+      "economic_stratum": {
+        "substantive_rho1_optimum": "premium|premium",
+        "first_switch_rho": 0.5
+      }
+    },
+    {
+      "family_id": 88,
+      "candidate_id": 181683,
+      "lead_branch_index": 1,
+      "branch1_premium_label": "B",
+      "branch2_premium_label": "A",
+      "economic_stratum": {
+        "substantive_rho1_optimum": "standard|standard",
+        "first_switch_rho": 0.5
+      }
+    },
+    {
+      "family_id": 89,
+      "candidate_id": 211378,
+      "lead_branch_index": 0,
+      "branch1_premium_label": "B",
+      "branch2_premium_label": "A",
+      "economic_stratum": {
+        "substantive_rho1_optimum": "premium|premium",
+        "first_switch_rho": 0.75
+      }
+    },
+    {
+      "family_id": 90,
+      "candidate_id": 318968,
+      "lead_branch_index": 0,
+      "branch1_premium_label": "B",
+      "branch2_premium_label": "A",
+      "economic_stratum": {
+        "substantive_rho1_optimum": "standard|standard",
+        "first_switch_rho": 0.75
+      }
+    },
+    {
+      "family_id": 91,
+      "candidate_id": 177234,
+      "lead_branch_index": 1,
+      "branch1_premium_label": "B",
+      "branch2_premium_label": "B",
+      "economic_stratum": {
+        "substantive_rho1_optimum": "premium|premium",
+        "first_switch_rho": 0.25
+      }
+    },
+    {
+      "family_id": 92,
+      "candidate_id": 178534,
+      "lead_branch_index": 1,
+      "branch1_premium_label": "A",
+      "branch2_premium_label": "B",
+      "economic_stratum": {
+        "substantive_rho1_optimum": "standard|standard",
+        "first_switch_rho": 0.25
+      }
+    },
+    {
+      "family_id": 93,
+      "candidate_id": 178325,
+      "lead_branch_index": 1,
+      "branch1_premium_label": "B",
+      "branch2_premium_label": "A",
+      "economic_stratum": {
+        "substantive_rho1_optimum": "premium|premium",
+        "first_switch_rho": 0.5
+      }
+    },
+    {
+      "family_id": 94,
+      "candidate_id": 182123,
+      "lead_branch_index": 0,
+      "branch1_premium_label": "A",
+      "branch2_premium_label": "A",
+      "economic_stratum": {
+        "substantive_rho1_optimum": "standard|standard",
+        "first_switch_rho": 0.5
+      }
+    },
+    {
+      "family_id": 95,
+      "candidate_id": 213998,
+      "lead_branch_index": 0,
+      "branch1_premium_label": "A",
+      "branch2_premium_label": "A",
+      "economic_stratum": {
+        "substantive_rho1_optimum": "premium|premium",
+        "first_switch_rho": 0.75
+      }
+    },
+    {
+      "family_id": 96,
+      "candidate_id": 329572,
+      "lead_branch_index": 0,
+      "branch1_premium_label": "A",
+      "branch2_premium_label": "A",
+      "economic_stratum": {
+        "substantive_rho1_optimum": "standard|standard",
+        "first_switch_rho": 0.75
+      }
+    },
+    {
+      "family_id": 97,
+      "candidate_id": 177240,
+      "lead_branch_index": 0,
+      "branch1_premium_label": "B",
+      "branch2_premium_label": "A",
+      "economic_stratum": {
+        "substantive_rho1_optimum": "premium|premium",
+        "first_switch_rho": 0.25
+      }
+    },
+    {
+      "family_id": 98,
+      "candidate_id": 178565,
+      "lead_branch_index": 0,
+      "branch1_premium_label": "B",
+      "branch2_premium_label": "A",
+      "economic_stratum": {
+        "substantive_rho1_optimum": "standard|standard",
+        "first_switch_rho": 0.25
+      }
+    },
+    {
+      "family_id": 99,
+      "candidate_id": 178538,
+      "lead_branch_index": 0,
+      "branch1_premium_label": "B",
+      "branch2_premium_label": "B",
+      "economic_stratum": {
+        "substantive_rho1_optimum": "premium|premium",
+        "first_switch_rho": 0.5
+      }
+    },
+    {
+      "family_id": 100,
+      "candidate_id": 182255,
+      "lead_branch_index": 1,
+      "branch1_premium_label": "A",
+      "branch2_premium_label": "A",
+      "economic_stratum": {
+        "substantive_rho1_optimum": "standard|standard",
+        "first_switch_rho": 0.5
+      }
+    },
+    {
+      "family_id": 101,
+      "candidate_id": 260426,
+      "lead_branch_index": 0,
+      "branch1_premium_label": "A",
+      "branch2_premium_label": "B",
+      "economic_stratum": {
+        "substantive_rho1_optimum": "premium|premium",
+        "first_switch_rho": 0.75
+      }
+    },
+    {
+      "family_id": 102,
+      "candidate_id": 332539,
+      "lead_branch_index": 0,
+      "branch1_premium_label": "B",
+      "branch2_premium_label": "B",
+      "economic_stratum": {
+        "substantive_rho1_optimum": "standard|standard",
+        "first_switch_rho": 0.75
+      }
+    }
+  ]
+}

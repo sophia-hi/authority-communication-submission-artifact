@@ -1,0 +1,17 @@
+family,org,role,all_four,computed_best,aligned_comparison,aligned_best,ranking_correct,aligned_ranking_correct,final,optimal,exact,own_action_matches_computed_best,interaction_outputs,reporting_branch,lead_branch,report_component_mismatch,lead_component_matches
+4,informational_handoff,Lead,True,BA,True,BA,True,True,AA,BA,0,False,10,1,2,True,True
+14,informational_handoff,Lead,True,AB,True,AB,True,True,AB,AB,1,True,8,2,1,False,True
+16,informational_handoff,Lead,True,BA,True,BA,True,True,BA,BA,1,True,9,2,1,False,True
+24,informational_handoff,Lead,True,BB,True,BB,True,True,BA,BB,0,False,4,2,1,True,True
+28,informational_handoff,Lead,True,AB,True,AB,True,True,AB,AB,1,True,8,1,2,False,True
+35,informational_handoff,Lead,True,BA,True,BB,False,True,BA,BB,0,True,5,1,2,False,True
+39,informational_handoff,Lead,True,AB,True,AB,False,False,AA,BA,0,False,4,2,1,True,True
+40,informational_handoff,Lead,True,AA,True,AA,True,True,AB,AA,0,False,4,2,1,True,True
+45,informational_handoff,Lead,True,AB,True,AB,True,True,BA,AB,0,False,4,2,1,True,False
+60,informational_handoff,Lead,True,BB,True,BB,True,True,BB,BB,1,True,4,1,2,False,True
+68,informational_handoff,Lead,True,BB,True,BB,True,True,BA,BB,0,False,4,2,1,True,True
+70,informational_handoff,Lead,True,BB,True,BB,True,True,BB,BB,1,True,4,2,1,False,True
+71,informational_handoff,Lead,True,BB,True,BB,True,True,BB,BB,1,True,4,1,2,False,True
+76,informational_handoff,Lead,True,AA,True,AA,True,True,AA,AA,1,True,4,2,1,False,True
+90,informational_handoff,Lead,True,BB,True,AB,False,True,BB,AB,0,True,4,2,1,False,True
+98,informational_handoff,Lead,True,AB,True,AB,True,True,BA,AB,0,False,8,2,1,True,False

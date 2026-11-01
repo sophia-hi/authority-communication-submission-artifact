@@ -1,0 +1,950 @@
+{
+  "label": "exploratory_extension_42_plus_unchanged_60",
+  "original_families": 60,
+  "new_families": 42,
+  "combined_families": 102,
+  "potential_cells_if_all_7_orgs_x_5_rho_run": 3570,
+  "selected_candidate_ids": [
+    177056,
+    177052,
+    177178,
+    177627,
+    192010,
+    186544,
+    177096,
+    178010,
+    177277,
+    179871,
+    192619,
+    193512,
+    177164,
+    178346,
+    177923,
+    180620,
+    202140,
+    247052,
+    177190,
+    178424,
+    177990,
+    181217,
+    203916,
+    315079,
+    177221,
+    178457,
+    178213,
+    181683,
+    211378,
+    318968,
+    177234,
+    178534,
+    178325,
+    182123,
+    213998,
+    329572,
+    177240,
+    178565,
+    178538,
+    182255,
+    260426,
+    332539
+  ],
+  "source_original_counterbalance_sha256": "43ea745d8c27afdd14bf863b7ecc177f83759a186fb031dfef1c2e267e03cdea",
+  "original_audit": {
+    "design_version": "authority_communication_review_v20",
+    "master_seed": 20261013,
+    "document_template_seed": 20261013,
+    "candidate_ids_scanned": 177034,
+    "accepted": 60,
+    "minimum_relative_optimum_margin": 0.01,
+    "rejection_reason_counts": {
+      "filled_or_unplanned_stratum": 7974,
+      "local_gap_too_large": 9,
+      "local_gap_too_small": 79452,
+      "optimum_margin_too_small": 48412,
+      "relative_optimum_margin_too_small": 84302,
+      "rho1_change_not_material": 126832,
+      "rho1_no_coordination_change": 106127,
+      "transition_not_material_on_score": 3796,
+      "transition_outside_target": 109460
+    },
+    "rho1_label_counts": {
+      "AB": 15,
+      "BB": 15,
+      "BA": 15,
+      "AA": 15
+    },
+    "lead_branch_counts": {
+      "1": 30,
+      "2": 30
+    },
+    "substantive_rho1_counts": {
+      "premium|premium": 30,
+      "standard|standard": 30
+    },
+    "local_plan_counts": {
+      "premium|standard": 28,
+      "standard|premium": 32
+    },
+    "switch_rho_counts": {
+      "0.25": 20,
+      "0.5": 20,
+      "0.75": 20
+    },
+    "counterbalance": {
+      "algorithm_version": "seeded_constrained_counterbalance_v2",
+      "counterbalance_seed": 20261019,
+      "assignment_sha256": "43ea745d8c27afdd14bf863b7ecc177f83759a186fb031dfef1c2e267e03cdea",
+      "label_assignment_file": "label_assignment_v1.json",
+      "label_assignment_sha256": "f6c2e1b61a6a91efbd1b095f0b26ee4c8af55e9484e1def57692e92b3c614d38",
+      "label_maps_sha256": "b10b594318786be8347eef8f4e1c40a6b5271db1e26c14a7f65dc2e5316bb428",
+      "reproducibility_file": "counterbalance_reproducibility_v19.json",
+      "reproducibility_sha256": "26ab61f80d1c9438619ed5f6f12222e9b13cc70b5b85f33bb13eabe278c5550f",
+      "selection_rule": "first exact feasible Lead assignment found in seeded option order, with the v1 label maps and all 60 economic families held fixed; certificate is keyed by candidate_id and revalidated on every frame build",
+      "hard_constraints": [
+        "Lead is Branch 1 in 5 of 10 families within each economic stratum",
+        "Each branch maps premium to A in 30 of 60 families",
+        "At every rho, each role has correct label A in 29 to 31 families",
+        "At rho 0 through .75, each answer label occurs 14 to 16 times",
+        "At every rho, each answer label's counts across the two Lead sides differ by at most one",
+        "Within every rho x economic stratum x Lead-side cell, each of AA, AB, BA, BB occurs 1 or 2 times",
+        "At every rho, Lead and Reporting give-way counts attain the minimum feasible difference under five Lead sides per stratum",
+        "At rho one, each answer label occurs 15 times and 7 or 8 times under each Lead side",
+        "With economic families and label mappings fixed, give-way role by move direction attains the documented balanced feasible target at each nonzero rho"
+      ],
+      "label_mapping_counts": {
+        "branch_1_premium_label": {
+          "A": 30,
+          "B": 30
+        },
+        "branch_2_premium_label": {
+          "A": 30,
+          "B": 30
+        }
+      },
+      "lead_branch_counts_by_economic_stratum": {
+        "premium|premium__switch_0.25": {
+          "branch_1": 5,
+          "branch_2": 5
+        },
+        "premium|premium__switch_0.5": {
+          "branch_1": 5,
+          "branch_2": 5
+        },
+        "premium|premium__switch_0.75": {
+          "branch_1": 5,
+          "branch_2": 5
+        },
+        "standard|standard__switch_0.25": {
+          "branch_1": 5,
+          "branch_2": 5
+        },
+        "standard|standard__switch_0.5": {
+          "branch_1": 5,
+          "branch_2": 5
+        },
+        "standard|standard__switch_0.75": {
+          "branch_1": 5,
+          "branch_2": 5
+        }
+      },
+      "correct_answer_label_by_role_and_rho": {
+        "0.0": {
+          "Lead": {
+            "A": 31,
+            "B": 29
+          },
+          "Reporting": {
+            "A": 31,
+            "B": 29
+          }
+        },
+        "0.25": {
+          "Lead": {
+            "A": 30,
+            "B": 30
+          },
+          "Reporting": {
+            "A": 30,
+            "B": 30
+          }
+        },
+        "0.5": {
+          "Lead": {
+            "A": 29,
+            "B": 31
+          },
+          "Reporting": {
+            "A": 31,
+            "B": 29
+          }
+        },
+        "0.75": {
+          "Lead": {
+            "A": 29,
+            "B": 31
+          },
+          "Reporting": {
+            "A": 31,
+            "B": 29
+          }
+        },
+        "1.0": {
+          "Lead": {
+            "A": 29,
+            "B": 31
+          },
+          "Reporting": {
+            "A": 31,
+            "B": 29
+          }
+        }
+      },
+      "answer_label_counts_by_rho": {
+        "0.0": {
+          "AA": 16,
+          "AB": 14,
+          "BA": 16,
+          "BB": 14
+        },
+        "0.25": {
+          "AA": 15,
+          "AB": 14,
+          "BA": 16,
+          "BB": 15
+        },
+        "0.5": {
+          "AA": 15,
+          "AB": 15,
+          "BA": 15,
+          "BB": 15
+        },
+        "0.75": {
+          "AA": 15,
+          "AB": 15,
+          "BA": 15,
+          "BB": 15
+        },
+        "1.0": {
+          "AA": 15,
+          "AB": 15,
+          "BA": 15,
+          "BB": 15
+        }
+      },
+      "answer_labels_by_rho_stratum_and_lead_side": {
+        "0.0": {
+          "premium|premium__switch_0.25": {
+            "lead_branch_1": {
+              "AA": 2,
+              "AB": 1,
+              "BA": 1,
+              "BB": 1
+            },
+            "lead_branch_2": {
+              "AA": 2,
+              "AB": 1,
+              "BA": 1,
+              "BB": 1
+            }
+          },
+          "premium|premium__switch_0.5": {
+            "lead_branch_1": {
+              "AA": 2,
+              "AB": 1,
+              "BA": 1,
+              "BB": 1
+            },
+            "lead_branch_2": {
+              "AA": 1,
+              "AB": 1,
+              "BA": 2,
+              "BB": 1
+            }
+          },
+          "premium|premium__switch_0.75": {
+            "lead_branch_1": {
+              "AA": 1,
+              "AB": 1,
+              "BA": 1,
+              "BB": 2
+            },
+            "lead_branch_2": {
+              "AA": 1,
+              "AB": 1,
+              "BA": 2,
+              "BB": 1
+            }
+          },
+          "standard|standard__switch_0.25": {
+            "lead_branch_1": {
+              "AA": 1,
+              "AB": 1,
+              "BA": 2,
+              "BB": 1
+            },
+            "lead_branch_2": {
+              "AA": 1,
+              "AB": 2,
+              "BA": 1,
+              "BB": 1
+            }
+          },
+          "standard|standard__switch_0.5": {
+            "lead_branch_2": {
+              "AA": 2,
+              "AB": 1,
+              "BA": 1,
+              "BB": 1
+            },
+            "lead_branch_1": {
+              "AA": 1,
+              "AB": 1,
+              "BA": 2,
+              "BB": 1
+            }
+          },
+          "standard|standard__switch_0.75": {
+            "lead_branch_1": {
+              "AA": 1,
+              "AB": 2,
+              "BA": 1,
+              "BB": 1
+            },
+            "lead_branch_2": {
+              "AA": 1,
+              "AB": 1,
+              "BA": 1,
+              "BB": 2
+            }
+          }
+        },
+        "0.25": {
+          "premium|premium__switch_0.25": {
+            "lead_branch_1": {
+              "AA": 1,
+              "AB": 1,
+              "BA": 2,
+              "BB": 1
+            },
+            "lead_branch_2": {
+              "AA": 1,
+              "AB": 2,
+              "BA": 1,
+              "BB": 1
+            }
+          },
+          "premium|premium__switch_0.5": {
+            "lead_branch_1": {
+              "AA": 2,
+              "AB": 1,
+              "BA": 1,
+              "BB": 1
+            },
+            "lead_branch_2": {
+              "AA": 1,
+              "AB": 1,
+              "BA": 2,
+              "BB": 1
+            }
+          },
+          "premium|premium__switch_0.75": {
+            "lead_branch_1": {
+              "AA": 1,
+              "AB": 1,
+              "BA": 1,
+              "BB": 2
+            },
+            "lead_branch_2": {
+              "AA": 1,
+              "AB": 1,
+              "BA": 2,
+              "BB": 1
+            }
+          },
+          "standard|standard__switch_0.25": {
+            "lead_branch_1": {
+              "AA": 1,
+              "AB": 1,
+              "BA": 1,
+              "BB": 2
+            },
+            "lead_branch_2": {
+              "AA": 2,
+              "AB": 1,
+              "BA": 1,
+              "BB": 1
+            }
+          },
+          "standard|standard__switch_0.5": {
+            "lead_branch_2": {
+              "AA": 2,
+              "AB": 1,
+              "BA": 1,
+              "BB": 1
+            },
+            "lead_branch_1": {
+              "AA": 1,
+              "AB": 1,
+              "BA": 2,
+              "BB": 1
+            }
+          },
+          "standard|standard__switch_0.75": {
+            "lead_branch_1": {
+              "AA": 1,
+              "AB": 2,
+              "BA": 1,
+              "BB": 1
+            },
+            "lead_branch_2": {
+              "AA": 1,
+              "AB": 1,
+              "BA": 1,
+              "BB": 2
+            }
+          }
+        },
+        "0.5": {
+          "premium|premium__switch_0.25": {
+            "lead_branch_1": {
+              "AA": 1,
+              "AB": 1,
+              "BA": 2,
+              "BB": 1
+            },
+            "lead_branch_2": {
+              "AA": 1,
+              "AB": 2,
+              "BA": 1,
+              "BB": 1
+            }
+          },
+          "premium|premium__switch_0.5": {
+            "lead_branch_1": {
+              "AA": 1,
+              "AB": 1,
+              "BA": 2,
+              "BB": 1
+            },
+            "lead_branch_2": {
+              "AA": 2,
+              "AB": 1,
+              "BA": 1,
+              "BB": 1
+            }
+          },
+          "premium|premium__switch_0.75": {
+            "lead_branch_1": {
+              "AA": 1,
+              "AB": 1,
+              "BA": 1,
+              "BB": 2
+            },
+            "lead_branch_2": {
+              "AA": 1,
+              "AB": 1,
+              "BA": 2,
+              "BB": 1
+            }
+          },
+          "standard|standard__switch_0.25": {
+            "lead_branch_1": {
+              "AA": 1,
+              "AB": 1,
+              "BA": 1,
+              "BB": 2
+            },
+            "lead_branch_2": {
+              "AA": 2,
+              "AB": 1,
+              "BA": 1,
+              "BB": 1
+            }
+          },
+          "standard|standard__switch_0.5": {
+            "lead_branch_2": {
+              "AA": 1,
+              "AB": 2,
+              "BA": 1,
+              "BB": 1
+            },
+            "lead_branch_1": {
+              "AA": 2,
+              "AB": 1,
+              "BA": 1,
+              "BB": 1
+            }
+          },
+          "standard|standard__switch_0.75": {
+            "lead_branch_1": {
+              "AA": 1,
+              "AB": 2,
+              "BA": 1,
+              "BB": 1
+            },
+            "lead_branch_2": {
+              "AA": 1,
+              "AB": 1,
+              "BA": 1,
+              "BB": 2
+            }
+          }
+        },
+        "0.75": {
+          "premium|premium__switch_0.25": {
+            "lead_branch_1": {
+              "AA": 1,
+              "AB": 1,
+              "BA": 2,
+              "BB": 1
+            },
+            "lead_branch_2": {
+              "AA": 1,
+              "AB": 2,
+              "BA": 1,
+              "BB": 1
+            }
+          },
+          "premium|premium__switch_0.5": {
+            "lead_branch_1": {
+              "AA": 1,
+              "AB": 1,
+              "BA": 2,
+              "BB": 1
+            },
+            "lead_branch_2": {
+              "AA": 2,
+              "AB": 1,
+              "BA": 1,
+              "BB": 1
+            }
+          },
+          "premium|premium__switch_0.75": {
+            "lead_branch_1": {
+              "AA": 1,
+              "AB": 2,
+              "BA": 1,
+              "BB": 1
+            },
+            "lead_branch_2": {
+              "AA": 1,
+              "AB": 1,
+              "BA": 1,
+              "BB": 2
+            }
+          },
+          "standard|standard__switch_0.25": {
+            "lead_branch_1": {
+              "AA": 1,
+              "AB": 1,
+              "BA": 1,
+              "BB": 2
+            },
+            "lead_branch_2": {
+              "AA": 2,
+              "AB": 1,
+              "BA": 1,
+              "BB": 1
+            }
+          },
+          "standard|standard__switch_0.5": {
+            "lead_branch_2": {
+              "AA": 1,
+              "AB": 2,
+              "BA": 1,
+              "BB": 1
+            },
+            "lead_branch_1": {
+              "AA": 2,
+              "AB": 1,
+              "BA": 1,
+              "BB": 1
+            }
+          },
+          "standard|standard__switch_0.75": {
+            "lead_branch_1": {
+              "AA": 1,
+              "AB": 1,
+              "BA": 1,
+              "BB": 2
+            },
+            "lead_branch_2": {
+              "AA": 1,
+              "AB": 1,
+              "BA": 2,
+              "BB": 1
+            }
+          }
+        },
+        "1.0": {
+          "premium|premium__switch_0.25": {
+            "lead_branch_1": {
+              "AA": 1,
+              "AB": 1,
+              "BA": 2,
+              "BB": 1
+            },
+            "lead_branch_2": {
+              "AA": 1,
+              "AB": 2,
+              "BA": 1,
+              "BB": 1
+            }
+          },
+          "premium|premium__switch_0.5": {
+            "lead_branch_1": {
+              "AA": 1,
+              "AB": 1,
+              "BA": 2,
+              "BB": 1
+            },
+            "lead_branch_2": {
+              "AA": 2,
+              "AB": 1,
+              "BA": 1,
+              "BB": 1
+            }
+          },
+          "premium|premium__switch_0.75": {
+            "lead_branch_1": {
+              "AA": 1,
+              "AB": 2,
+              "BA": 1,
+              "BB": 1
+            },
+            "lead_branch_2": {
+              "AA": 1,
+              "AB": 1,
+              "BA": 1,
+              "BB": 2
+            }
+          },
+          "standard|standard__switch_0.25": {
+            "lead_branch_1": {
+              "AA": 1,
+              "AB": 1,
+              "BA": 1,
+              "BB": 2
+            },
+            "lead_branch_2": {
+              "AA": 2,
+              "AB": 1,
+              "BA": 1,
+              "BB": 1
+            }
+          },
+          "standard|standard__switch_0.5": {
+            "lead_branch_2": {
+              "AA": 1,
+              "AB": 2,
+              "BA": 1,
+              "BB": 1
+            },
+            "lead_branch_1": {
+              "AA": 2,
+              "AB": 1,
+              "BA": 1,
+              "BB": 1
+            }
+          },
+          "standard|standard__switch_0.75": {
+            "lead_branch_1": {
+              "AA": 1,
+              "AB": 1,
+              "BA": 1,
+              "BB": 2
+            },
+            "lead_branch_2": {
+              "AA": 1,
+              "AB": 1,
+              "BA": 2,
+              "BB": 1
+            }
+          }
+        }
+      },
+      "rho1_answer_label_by_lead_side": {
+        "AA": {
+          "lead_branch_1": 7,
+          "lead_branch_2": 8
+        },
+        "AB": {
+          "lead_branch_1": 7,
+          "lead_branch_2": 8
+        },
+        "BA": {
+          "lead_branch_1": 8,
+          "lead_branch_2": 7
+        },
+        "BB": {
+          "lead_branch_1": 8,
+          "lead_branch_2": 7
+        }
+      },
+      "give_way_role_by_rho": {
+        "0.0": {
+          "Lead": 0,
+          "Reporting": 0,
+          "both": 0,
+          "neither": 60
+        },
+        "0.25": {
+          "Lead": 11,
+          "Reporting": 9,
+          "both": 0,
+          "neither": 40
+        },
+        "0.5": {
+          "Lead": 20,
+          "Reporting": 20,
+          "both": 0,
+          "neither": 20
+        },
+        "0.75": {
+          "Lead": 30,
+          "Reporting": 30,
+          "both": 0,
+          "neither": 0
+        },
+        "1.0": {
+          "Lead": 30,
+          "Reporting": 30,
+          "both": 0,
+          "neither": 0
+        }
+      },
+      "give_way_role_by_direction_and_rho": {
+        "0.0": {
+          "Lead": {
+            "premium": 0,
+            "standard": 0
+          },
+          "Reporting": {
+            "premium": 0,
+            "standard": 0
+          }
+        },
+        "0.25": {
+          "Lead": {
+            "premium": 6,
+            "standard": 5
+          },
+          "Reporting": {
+            "premium": 4,
+            "standard": 5
+          }
+        },
+        "0.5": {
+          "Lead": {
+            "premium": 9,
+            "standard": 11
+          },
+          "Reporting": {
+            "premium": 11,
+            "standard": 9
+          }
+        },
+        "0.75": {
+          "Lead": {
+            "premium": 15,
+            "standard": 15
+          },
+          "Reporting": {
+            "premium": 15,
+            "standard": 15
+          }
+        },
+        "1.0": {
+          "Lead": {
+            "premium": 15,
+            "standard": 15
+          },
+          "Reporting": {
+            "premium": 15,
+            "standard": 15
+          }
+        }
+      },
+      "minimum_feasible_give_way_imbalance_by_rho": {
+        "0.0": 0,
+        "0.25": 2,
+        "0.5": 0,
+        "0.75": 0,
+        "1.0": 0
+      }
+    }
+  },
+  "balance_constraint_count": 175,
+  "relaxed_constraint_families": [],
+  "solver_status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+  "economic_strata": {
+    "premium|premium__switch_0.25": 17,
+    "premium|premium__switch_0.5": 17,
+    "premium|premium__switch_0.75": 17,
+    "standard|standard__switch_0.25": 17,
+    "standard|standard__switch_0.5": 17,
+    "standard|standard__switch_0.75": 17
+  },
+  "rho1_substantive_optimum_counts": {
+    "premium|premium": 51,
+    "standard|standard": 51
+  },
+  "first_switch_counts": {
+    "0.25": 34,
+    "0.5": 34,
+    "0.75": 34
+  },
+  "minimum_optimum_margin_m": 0.07453335810870954,
+  "minimum_relative_optimum_margin": 0.010027150077990507,
+  "lead_branch_2_count": 51,
+  "premium_maps_to_A_by_branch": {
+    "1": 51,
+    "2": 51
+  },
+  "answer_label_counts_by_rho": {
+    "0.0": {
+      "AA": 26,
+      "AB": 25,
+      "BA": 25,
+      "BB": 26
+    },
+    "0.25": {
+      "AA": 26,
+      "AB": 26,
+      "BA": 24,
+      "BB": 26
+    },
+    "0.5": {
+      "AA": 25,
+      "AB": 25,
+      "BA": 25,
+      "BB": 27
+    },
+    "0.75": {
+      "AA": 24,
+      "AB": 26,
+      "BA": 26,
+      "BB": 26
+    },
+    "1.0": {
+      "AA": 24,
+      "AB": 26,
+      "BA": 26,
+      "BB": 26
+    }
+  },
+  "role_A_counts_by_rho": {
+    "0.0": {
+      "Lead": 50,
+      "Reporting": 52
+    },
+    "0.25": {
+      "Lead": 51,
+      "Reporting": 51
+    },
+    "0.5": {
+      "Lead": 50,
+      "Reporting": 50
+    },
+    "0.75": {
+      "Lead": 50,
+      "Reporting": 50
+    },
+    "1.0": {
+      "Lead": 50,
+      "Reporting": 50
+    }
+  },
+  "giveway_by_rho": {
+    "0.0": {
+      "Lead": 0,
+      "Reporting": 0
+    },
+    "0.25": {
+      "Lead": 17,
+      "Reporting": 17
+    },
+    "0.5": {
+      "Lead": 34,
+      "Reporting": 34
+    },
+    "0.75": {
+      "Lead": 52,
+      "Reporting": 50
+    },
+    "1.0": {
+      "Lead": 52,
+      "Reporting": 50
+    }
+  },
+  "giveway_direction_by_rho": {
+    "0.0": {
+      "Lead": {
+        "premium": 0,
+        "standard": 0
+      },
+      "Reporting": {
+        "premium": 0,
+        "standard": 0
+      }
+    },
+    "0.25": {
+      "Lead": {
+        "premium": 9,
+        "standard": 8
+      },
+      "Reporting": {
+        "premium": 8,
+        "standard": 9
+      }
+    },
+    "0.5": {
+      "Lead": {
+        "premium": 17,
+        "standard": 17
+      },
+      "Reporting": {
+        "premium": 17,
+        "standard": 17
+      }
+    },
+    "0.75": {
+      "Lead": {
+        "premium": 26,
+        "standard": 26
+      },
+      "Reporting": {
+        "premium": 25,
+        "standard": 25
+      }
+    },
+    "1.0": {
+      "Lead": {
+        "premium": 26,
+        "standard": 26
+      },
+      "Reporting": {
+        "premium": 25,
+        "standard": 25
+      }
+    }
+  },
+  "rho1_answer_by_lead_side": {
+    "AA": {
+      "1": 12,
+      "2": 12
+    },
+    "AB": {
+      "1": 13,
+      "2": 13
+    },
+    "BA": {
+      "1": 13,
+      "2": 13
+    },
+    "BB": {
+      "1": 13,
+      "2": 13
+    }
+  }
+}

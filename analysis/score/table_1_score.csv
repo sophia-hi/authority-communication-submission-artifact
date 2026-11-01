@@ -1,0 +1,17 @@
+Variable,M1,M2
+Authority,0.0205 (0.0273),0.0205 (0.0273)
+One-way communication,0.0288 (0.0228),-0.0010 (0.0274)
+Two-way communication,0.0661*** (0.0233),0.0661*** (0.0233)
+ρ,-0.2732*** (0.0423),-0.2732*** (0.0424)
+Authority × One-way,-0.0085 (0.0338),0.0213 (0.0386)
+Authority × Two-way,-0.0330 (0.0330),-0.0330 (0.0330)
+Authority × ρ,0.2041*** (0.0539),0.2041*** (0.0540)
+One-way × ρ,0.1558*** (0.0439),0.1148** (0.0488)
+Two-way × ρ,0.1512*** (0.0527),0.1512*** (0.0528)
+Authority × One-way × ρ,-0.1665** (0.0682),-0.1255* (0.0731)
+Authority × Two-way × ρ,-0.1249* (0.0636),-0.1249* (0.0636)
+Commitment,—,0.0587** (0.0244)
+Commitment × ρ,—,0.0783** (0.0393)
+Observations,1428,1428
+Scenario fixed effects,Yes,Yes
+Scenario clusters,102,102

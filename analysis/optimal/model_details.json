@@ -1,0 +1,49 @@
+{
+  "models": {
+    "logit_M3": {
+      "formula": "optimal ~ C(family_id) + authority * C(communication) * rho",
+      "n": 1400,
+      "parameters": 111,
+      "clusters": 100,
+      "inference_df": 99,
+      "converged": true,
+      "fitted_min": 0.023960468020389952,
+      "fitted_max": 0.9957966921721332,
+      "fitted_outside_01": 0,
+      "max_abs_coefficient": 3.2386636345930895,
+      "information_condition_number": 21359.633717256744,
+      "score_max_abs": 1.0690892615627945e-12
+    },
+    "logit_M4": {
+      "formula": "optimal ~ C(family_id) + authority * C(communication) * rho + commitment * rho",
+      "n": 1400,
+      "parameters": 113,
+      "clusters": 100,
+      "inference_df": 99,
+      "converged": true,
+      "fitted_min": 0.023183185620357646,
+      "fitted_max": 0.9959102966720171,
+      "fitted_outside_01": 0,
+      "max_abs_coefficient": 3.2453469589865485,
+      "information_condition_number": 21688.110539297693,
+      "score_max_abs": 1.6524004387008517e-12
+    }
+  },
+  "validation": {
+    "logit_org_parameterization_max_difference": 4.107825191113079e-15,
+    "source_n": 1428,
+    "logit_n": 1400,
+    "logit_clusters": 100,
+    "excluded_families": [
+      73,
+      85
+    ],
+    "excluded_runs": 28,
+    "reason": "No within-family outcome variation; all 14 outcomes equal one in each excluded family.",
+    "logit_estimator": "Unconditional binomial-logit MLE with family indicator coefficients, not conditional logit.",
+    "probability_standardization": "Equal weight across retained families.",
+    "estimators": [
+      "logit"
+    ]
+  }
+}

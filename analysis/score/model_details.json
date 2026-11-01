@@ -1,0 +1,24 @@
+{
+  "models": {
+    "M1": {
+      "formula": "score ~ C(family_id) + authority * C(communication) * rho",
+      "nobs": 1428,
+      "parameters": 113,
+      "converged": true,
+      "fitted_above_100": 187
+    },
+    "M2": {
+      "formula": "score ~ C(family_id) + authority * C(communication) * rho + commitment * rho",
+      "nobs": 1428,
+      "parameters": 115,
+      "converged": true,
+      "fitted_above_100": 184
+    }
+  },
+  "checks": {
+    "equivalent_organization_model": "M2",
+    "equivalent_fitted_max_abs_diff": 1.3784529073745944e-12,
+    "family_clusters": 102,
+    "p_value_df": 101
+  }
+}

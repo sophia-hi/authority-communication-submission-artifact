@@ -1,0 +1,60 @@
+{
+  "version": "counterbalance_reproducibility_v19",
+  "design_version": "authority_communication_review_v20",
+  "economic_generator_version": "branch_pricing_v1",
+  "economic_families_held_fixed": 60,
+  "label_assignment_file": "label_assignment_v1.json",
+  "label_assignment_sha256": "f6c2e1b61a6a91efbd1b095f0b26ee4c8af55e9484e1def57692e92b3c614d38",
+  "label_maps_sha256": "b10b594318786be8347eef8f4e1c40a6b5271db1e26c14a7f65dc2e5316bb428",
+  "lead_assignment_file": "counterbalance_assignment.json",
+  "lead_assignment_certificate_sha256": "43ea745d8c27afdd14bf863b7ecc177f83759a186fb031dfef1c2e267e03cdea",
+  "counterbalance_seed": 20261019,
+  "seeded_order": "Within each of the six economic strata in sorted (rho-one substantive optimum, first-switch rho) order, enumerate five-of-ten Branch-2-Lead combinations lexicographically, then shuffle each stratum's list sequentially with one Python random.Random(counterbalance_seed) instance. Filter options by the frozen within-cell label constraint and visit the remaining options in that seeded order.",
+  "tie_break": "first feasible assignment",
+  "new_frame_sha256": "69d19cc5fd29bb93f039ac9c35ac8f98f3add07f4f1930caf6fa2dad6b294485",
+  "new_assignment_logical_sha256": "da25d572a532221e112b45f03b89cbe8189ff3be8db90b00457a9cdf8c29919e",
+  "targets": {
+    "0.25": {
+      "Lead": {
+        "premium": 6,
+        "standard": 5
+      },
+      "Reporting": {
+        "premium": 4,
+        "standard": 5
+      }
+    },
+    "0.5": {
+      "Lead": {
+        "premium": 9,
+        "standard": 11
+      },
+      "Reporting": {
+        "premium": 11,
+        "standard": 9
+      }
+    },
+    "0.75": {
+      "Lead": {
+        "premium": 15,
+        "standard": 15
+      },
+      "Reporting": {
+        "premium": 15,
+        "standard": 15
+      }
+    },
+    "1.0": {
+      "Lead": {
+        "premium": 15,
+        "standard": 15
+      },
+      "Reporting": {
+        "premium": 15,
+        "standard": 15
+      }
+    }
+  },
+  "hard_constraints_validation": "passed",
+  "hard_constraints_source": "counterbalance_assignment.json"
+}

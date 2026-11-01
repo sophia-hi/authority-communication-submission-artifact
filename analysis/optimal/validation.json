@@ -1,0 +1,9 @@
+{
+  "discrete_logit_coefficient_max_difference": 3.2929214910382143e-13,
+  "discrete_logit_covariance_max_difference": 2.384759056894836e-13,
+  "probability_delta_gradient_max_difference": 2.518726616163036e-10,
+  "reproduced_probability_endpoint_change": 0.16999999999998805,
+  "reproduced_cluster_se": 0.06854033905995323,
+  "logit_n": 1400,
+  "logit_families": 100
+}

@@ -1,0 +1,4 @@
+category,mutual,centralized,mutual_only,centralized_only,p,p_holm_3
+neither_yields,11,9,9,7,0.803619384765625,0.803619384765625
+both_yield,6,2,6,2,0.2890625,0.578125
+wrong_branch_yields,16,7,14,5,0.063568115234375,0.190704345703125

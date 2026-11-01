@@ -1,0 +1,4 @@
+metric,n,independent,mutual,difference_pp,mutual_only,independent_only,p_exact,p_holm_three
+detected_profit_output_error,102,29,19,-9.803921568627452,13,23,0.13249816396273675,0.2649963279254735
+wrong_after_correct_values,102,11,1,-9.803921568627452,1,11,0.00634765625,0.01904296875
+other_final_failure,102,6,3,-2.941176470588235,2,5,0.453125,0.453125

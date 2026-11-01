@@ -1,0 +1,313 @@
+{
+  "schema_version": "recovery_lineage_v2",
+  "scope": "Attempt history and recovery evidence for four of the 3,570 completed runs.",
+  "authorization_record": "results_exceptional_recovery_4_v18_gpt6_low/exceptional_recovery_authorization.json",
+  "records": [
+    {
+      "path": "results_exceptional_recovery_4_v18_gpt6_low/exceptional_recovery_authorization.json",
+      "sha256": "bed8ab49b934c7b098ce1663af4356b1e35208d50c793cc3454abd64f5132822",
+      "kind": "exceptional_recovery_authorization",
+      "representation": "technical_extract",
+      "source_sha256": "320310c083186cbb2b847ecca15ace1c0cbef30489a18e4005fe164441f5606f",
+      "omitted_fields": [
+        "approved_by",
+        "approval_text",
+        "exception_reason"
+      ]
+    },
+    {
+      "path": "results_exploratory_remaining_1680_v18_gpt6_low/explore2100__mutual__f018__rho075__r00.json",
+      "sha256": "5bd109c6934ac1d694b2881fd1ec9653cf33a7dce4cf8198da722ae4cadebf5f",
+      "kind": "confirmed_failure",
+      "run_id": "explore2100__mutual__f018__rho075__r00",
+      "representation": "technical_extract",
+      "source_sha256": "835e67b5ece1ffb5cee6114c7a46280a43df82d40948e0f556ac0b3eecbc0649",
+      "omitted_fields": [
+        "inspection_resolution.reviewer",
+        "inspection_resolution.note"
+      ]
+    },
+    {
+      "path": "results_exploratory_remaining_1680_v18_gpt6_low/explore2100__mutual__f022__rho075__r00.json",
+      "sha256": "fef13a66f3259c1e94d52bd4dfb7f2d59710bfba08f78e759c443f223281d7aa",
+      "kind": "confirmed_failure",
+      "run_id": "explore2100__mutual__f022__rho075__r00",
+      "representation": "technical_extract",
+      "source_sha256": "4d2274e9e190fc7c4046b3423186814b96aed06b35721385948eee986f80f240",
+      "omitted_fields": [
+        "inspection_resolution.reviewer",
+        "inspection_resolution.note"
+      ]
+    },
+    {
+      "path": "results_exploratory_remaining_1680_v18_gpt6_low/explore2100__mutual__f047__rho075__r00.json",
+      "sha256": "fb409c39cb4cfa72dde17c7494e0306c9738db3fa13d2e50da72f6b60d3bee63",
+      "kind": "confirmed_failure",
+      "run_id": "explore2100__mutual__f047__rho075__r00",
+      "representation": "technical_extract",
+      "source_sha256": "0d6fdc40471ecd8d388f4d9250eb3b0cf0f5efc3c9180c069a2b3d57e46c5846",
+      "omitted_fields": [
+        "inspection_resolution.reviewer",
+        "inspection_resolution.note"
+      ]
+    },
+    {
+      "path": "results_exploratory_remaining_1680_v18_gpt6_low/explore2100__mutual__f056__rho050__r00.json",
+      "sha256": "62ed94e947a9396fb3c3b224fdf2b8dc11294f468c21ece1d0204c5429ebd193",
+      "kind": "confirmed_failure",
+      "run_id": "explore2100__mutual__f056__rho050__r00",
+      "representation": "technical_extract",
+      "source_sha256": "5dae72bf8a630a3942621b41ce9e6bf90ac6ad0e6ecf7fb57504cd2afa14e1b1",
+      "omitted_fields": [
+        "inspection_resolution.reviewer",
+        "inspection_resolution.note"
+      ]
+    },
+    {
+      "path": "results_exploratory_remaining_1680_v18_gpt6_low/inspection_history/explore2100__mutual__f018__rho075__r00__inspection_001.json",
+      "sha256": "a5ab74ceb787b179edcdabd004539da875496e5c5e7398202863418ae3c5a75e",
+      "kind": "attempt_envelope",
+      "run_id": "explore2100__mutual__f018__rho075__r00",
+      "attempt": 1,
+      "representation": "original_bytes"
+    },
+    {
+      "path": "results_exploratory_remaining_1680_v18_gpt6_low/inspection_history/explore2100__mutual__f018__rho075__r00__inspection_002.json",
+      "sha256": "d017a2def1cd2dca004b4ed054da8a8c0ec372b16e43dc12cbac1bddba6d126b",
+      "kind": "attempt_envelope",
+      "run_id": "explore2100__mutual__f018__rho075__r00",
+      "attempt": 2,
+      "representation": "original_bytes"
+    },
+    {
+      "path": "results_exploratory_remaining_1680_v18_gpt6_low/inspection_history/explore2100__mutual__f022__rho075__r00__inspection_001.json",
+      "sha256": "528e4ac0593309d0e3ed938c67ae61dedc0f3a18441c194fdfa07998f3c1fc1d",
+      "kind": "attempt_envelope",
+      "run_id": "explore2100__mutual__f022__rho075__r00",
+      "attempt": 1,
+      "representation": "original_bytes"
+    },
+    {
+      "path": "results_exploratory_remaining_1680_v18_gpt6_low/inspection_history/explore2100__mutual__f022__rho075__r00__inspection_002.json",
+      "sha256": "1bf32260c315afd7ce4de044005c3e621f27efd0cfb126990fa611b2a08743c1",
+      "kind": "attempt_envelope",
+      "run_id": "explore2100__mutual__f022__rho075__r00",
+      "attempt": 2,
+      "representation": "original_bytes"
+    },
+    {
+      "path": "results_exploratory_remaining_1680_v18_gpt6_low/inspection_history/explore2100__mutual__f047__rho075__r00__inspection_001.json",
+      "sha256": "48f2d7adf40d98337caef10eed75bcbde5c4110c81fab24f25e2e1d3a59d0068",
+      "kind": "attempt_envelope",
+      "run_id": "explore2100__mutual__f047__rho075__r00",
+      "attempt": 1,
+      "representation": "original_bytes"
+    },
+    {
+      "path": "results_exploratory_remaining_1680_v18_gpt6_low/inspection_history/explore2100__mutual__f047__rho075__r00__inspection_002.json",
+      "sha256": "1157c00dd4247385fc110fd023fc5474d792547a45667b8539b3fe4d3d7a8195",
+      "kind": "attempt_envelope",
+      "run_id": "explore2100__mutual__f047__rho075__r00",
+      "attempt": 2,
+      "representation": "original_bytes"
+    },
+    {
+      "path": "results_exploratory_remaining_1680_v18_gpt6_low/inspection_history/explore2100__mutual__f056__rho050__r00__inspection_001.json",
+      "sha256": "2c0a71976de93cf70e78eca84db2ab17450c8adad03fdd63a558c6ee70b1fa96",
+      "kind": "attempt_envelope",
+      "run_id": "explore2100__mutual__f056__rho050__r00",
+      "attempt": 1,
+      "representation": "original_bytes"
+    },
+    {
+      "path": "results_exploratory_remaining_1680_v18_gpt6_low/inspection_history/explore2100__mutual__f056__rho050__r00__inspection_002.json",
+      "sha256": "c3c46f544f6b65a94a48650ad072c18a72a50e94a011c450888bdc850e108d0e",
+      "kind": "attempt_envelope",
+      "run_id": "explore2100__mutual__f056__rho050__r00",
+      "attempt": 2,
+      "representation": "original_bytes"
+    },
+    {
+      "path": "results_exploratory_remaining_1680_v18_gpt6_low/inspection_resolutions/explore2100__mutual__f018__rho075__r00__resolution_001.json",
+      "sha256": "bce8d1d39a5eb0451458d1ca9ac31a721ad2eac48f101d936b0c2c2e6aa9acc7",
+      "kind": "inspection_resolution",
+      "run_id": "explore2100__mutual__f018__rho075__r00",
+      "attempt": 1,
+      "representation": "technical_extract",
+      "source_sha256": "27cdc8ced986c688f4df899cc536436cec5ffbd1167f7447e1838a0d8ad57d7c",
+      "omitted_fields": [
+        "reviewer",
+        "note",
+        "progress_file"
+      ]
+    },
+    {
+      "path": "results_exploratory_remaining_1680_v18_gpt6_low/inspection_resolutions/explore2100__mutual__f018__rho075__r00__resolution_002.json",
+      "sha256": "36a61c16908243e8db047b97a08b38b93daa8b64bf66c211d5ebb0596255000a",
+      "kind": "inspection_resolution",
+      "run_id": "explore2100__mutual__f018__rho075__r00",
+      "attempt": 2,
+      "representation": "technical_extract",
+      "source_sha256": "3ccc46b34eef2eaccfb0958e524364ef833235fa9517b6a62a62e215da6466b4",
+      "omitted_fields": [
+        "reviewer",
+        "note",
+        "progress_file"
+      ]
+    },
+    {
+      "path": "results_exploratory_remaining_1680_v18_gpt6_low/inspection_resolutions/explore2100__mutual__f022__rho075__r00__resolution_001.json",
+      "sha256": "60b591333423d59480c7d88b490d746e02d71372e4e0002ccbab3a6db88bee5d",
+      "kind": "inspection_resolution",
+      "run_id": "explore2100__mutual__f022__rho075__r00",
+      "attempt": 1,
+      "representation": "technical_extract",
+      "source_sha256": "3c98b6c47a8b4fb02af921cb24bd01948882dbe78b99549a08d66167328427f8",
+      "omitted_fields": [
+        "reviewer",
+        "note",
+        "progress_file"
+      ]
+    },
+    {
+      "path": "results_exploratory_remaining_1680_v18_gpt6_low/inspection_resolutions/explore2100__mutual__f022__rho075__r00__resolution_002.json",
+      "sha256": "72ceafe502d9e456dfefb8bb8c27e7e50e5b8786f3cebe444bcc9b486628bf92",
+      "kind": "inspection_resolution",
+      "run_id": "explore2100__mutual__f022__rho075__r00",
+      "attempt": 2,
+      "representation": "technical_extract",
+      "source_sha256": "d1ac9ef317a9384947db169bbd820b5507f2df20dbcefaef03bc852647983f17",
+      "omitted_fields": [
+        "reviewer",
+        "note",
+        "progress_file"
+      ]
+    },
+    {
+      "path": "results_exploratory_remaining_1680_v18_gpt6_low/inspection_resolutions/explore2100__mutual__f047__rho075__r00__resolution_001.json",
+      "sha256": "fab1b342457aae703493584b51f9fd3454b3040f548d7a8af290112c040750b7",
+      "kind": "inspection_resolution",
+      "run_id": "explore2100__mutual__f047__rho075__r00",
+      "attempt": 1,
+      "representation": "technical_extract",
+      "source_sha256": "ea6f0ca6ebac212b01fbe45301c772515f650f53729f1a1c8939205b47600821",
+      "omitted_fields": [
+        "reviewer",
+        "note",
+        "progress_file"
+      ]
+    },
+    {
+      "path": "results_exploratory_remaining_1680_v18_gpt6_low/inspection_resolutions/explore2100__mutual__f047__rho075__r00__resolution_002.json",
+      "sha256": "1b5540c0fee253066ac97f4325f97f96308948d51141ace52f1c6e9064970a3e",
+      "kind": "inspection_resolution",
+      "run_id": "explore2100__mutual__f047__rho075__r00",
+      "attempt": 2,
+      "representation": "technical_extract",
+      "source_sha256": "e095443fa1bf6e058ca13b674328ba5c40c8dae5bfa8e903209392692e9a398f",
+      "omitted_fields": [
+        "reviewer",
+        "note",
+        "progress_file"
+      ]
+    },
+    {
+      "path": "results_exploratory_remaining_1680_v18_gpt6_low/inspection_resolutions/explore2100__mutual__f056__rho050__r00__resolution_001.json",
+      "sha256": "da6f82cdcea5d4f5209f3cf2139ddbbf9a64eeaa8d9a8fbae473f17cb39b73c2",
+      "kind": "inspection_resolution",
+      "run_id": "explore2100__mutual__f056__rho050__r00",
+      "attempt": 1,
+      "representation": "technical_extract",
+      "source_sha256": "ef847da2cf85e232d83109ebe7677a32c25feb86699a250b9796c8b46b945640",
+      "omitted_fields": [
+        "reviewer",
+        "note",
+        "progress_file"
+      ]
+    },
+    {
+      "path": "results_exploratory_remaining_1680_v18_gpt6_low/inspection_resolutions/explore2100__mutual__f056__rho050__r00__resolution_002.json",
+      "sha256": "c48e84852a14c4eca948b6b72c256a814eea5fdcc9c0a71a2a75a21fb61b2b8c",
+      "kind": "inspection_resolution",
+      "run_id": "explore2100__mutual__f056__rho050__r00",
+      "attempt": 2,
+      "representation": "technical_extract",
+      "source_sha256": "3ca19325d3a140299cc5844ee6a8e55b22a7ff2fd5a799b3aaf8663e28075c1d",
+      "omitted_fields": [
+        "reviewer",
+        "note",
+        "progress_file"
+      ]
+    }
+  ],
+  "cells": [
+    {
+      "run_id": "explore2100__mutual__f018__rho075__r00",
+      "family_id": 18,
+      "rho": 0.75,
+      "organization": "mutual",
+      "attempt_records": [
+        "results_exploratory_remaining_1680_v18_gpt6_low/inspection_history/explore2100__mutual__f018__rho075__r00__inspection_001.json",
+        "results_exploratory_remaining_1680_v18_gpt6_low/inspection_history/explore2100__mutual__f018__rho075__r00__inspection_002.json",
+        "results_exceptional_recovery_4_v18_gpt6_low/explore2100__mutual__f018__rho075__r00.json"
+      ],
+      "resolution_records": [
+        "results_exploratory_remaining_1680_v18_gpt6_low/inspection_resolutions/explore2100__mutual__f018__rho075__r00__resolution_001.json",
+        "results_exploratory_remaining_1680_v18_gpt6_low/inspection_resolutions/explore2100__mutual__f018__rho075__r00__resolution_002.json"
+      ],
+      "confirmed_failure_record": "results_exploratory_remaining_1680_v18_gpt6_low/explore2100__mutual__f018__rho075__r00.json",
+      "completed_record": "results_exceptional_recovery_4_v18_gpt6_low/explore2100__mutual__f018__rho075__r00.json"
+    },
+    {
+      "run_id": "explore2100__mutual__f022__rho075__r00",
+      "family_id": 22,
+      "rho": 0.75,
+      "organization": "mutual",
+      "attempt_records": [
+        "results_exploratory_remaining_1680_v18_gpt6_low/inspection_history/explore2100__mutual__f022__rho075__r00__inspection_001.json",
+        "results_exploratory_remaining_1680_v18_gpt6_low/inspection_history/explore2100__mutual__f022__rho075__r00__inspection_002.json",
+        "results_exceptional_recovery_4_v18_gpt6_low/explore2100__mutual__f022__rho075__r00.json"
+      ],
+      "resolution_records": [
+        "results_exploratory_remaining_1680_v18_gpt6_low/inspection_resolutions/explore2100__mutual__f022__rho075__r00__resolution_001.json",
+        "results_exploratory_remaining_1680_v18_gpt6_low/inspection_resolutions/explore2100__mutual__f022__rho075__r00__resolution_002.json"
+      ],
+      "confirmed_failure_record": "results_exploratory_remaining_1680_v18_gpt6_low/explore2100__mutual__f022__rho075__r00.json",
+      "completed_record": "results_exceptional_recovery_4_v18_gpt6_low/explore2100__mutual__f022__rho075__r00.json"
+    },
+    {
+      "run_id": "explore2100__mutual__f047__rho075__r00",
+      "family_id": 47,
+      "rho": 0.75,
+      "organization": "mutual",
+      "attempt_records": [
+        "results_exploratory_remaining_1680_v18_gpt6_low/inspection_history/explore2100__mutual__f047__rho075__r00__inspection_001.json",
+        "results_exploratory_remaining_1680_v18_gpt6_low/inspection_history/explore2100__mutual__f047__rho075__r00__inspection_002.json",
+        "results_exceptional_recovery_4_v18_gpt6_low/explore2100__mutual__f047__rho075__r00.json"
+      ],
+      "resolution_records": [
+        "results_exploratory_remaining_1680_v18_gpt6_low/inspection_resolutions/explore2100__mutual__f047__rho075__r00__resolution_001.json",
+        "results_exploratory_remaining_1680_v18_gpt6_low/inspection_resolutions/explore2100__mutual__f047__rho075__r00__resolution_002.json"
+      ],
+      "confirmed_failure_record": "results_exploratory_remaining_1680_v18_gpt6_low/explore2100__mutual__f047__rho075__r00.json",
+      "completed_record": "results_exceptional_recovery_4_v18_gpt6_low/explore2100__mutual__f047__rho075__r00.json"
+    },
+    {
+      "run_id": "explore2100__mutual__f056__rho050__r00",
+      "family_id": 56,
+      "rho": 0.5,
+      "organization": "mutual",
+      "attempt_records": [
+        "results_exploratory_remaining_1680_v18_gpt6_low/inspection_history/explore2100__mutual__f056__rho050__r00__inspection_001.json",
+        "results_exploratory_remaining_1680_v18_gpt6_low/inspection_history/explore2100__mutual__f056__rho050__r00__inspection_002.json",
+        "results_exceptional_recovery_4_v18_gpt6_low/explore2100__mutual__f056__rho050__r00.json"
+      ],
+      "resolution_records": [
+        "results_exploratory_remaining_1680_v18_gpt6_low/inspection_resolutions/explore2100__mutual__f056__rho050__r00__resolution_001.json",
+        "results_exploratory_remaining_1680_v18_gpt6_low/inspection_resolutions/explore2100__mutual__f056__rho050__r00__resolution_002.json"
+      ],
+      "confirmed_failure_record": "results_exploratory_remaining_1680_v18_gpt6_low/explore2100__mutual__f056__rho050__r00.json",
+      "completed_record": "results_exceptional_recovery_4_v18_gpt6_low/explore2100__mutual__f056__rho050__r00.json"
+    }
+  ]
+}

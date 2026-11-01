@@ -1,0 +1,9 @@
+Outcome,Model,Comparison,ρ,Estimate,p,Holm p,Scale
+Expected score,M2,Mutual vs Single,0,+4.67%,.036,.218,Relative expected-score difference
+Expected score,M2,Mutual vs Independent,0,+6.83%,.006,.028,Relative expected-score difference
+Expected score,M2,Centralized Two-way vs Mutual,1 − 0,0.0792,.035,—,Change in log expected-score ratio
+Expected score,M2,Committed vs Informational Handoff,0,+6.05%,.018,—,Relative expected-score difference
+Expected score,M2,Committed vs Informational Handoff,1,+14.68%,< .001,—,Relative expected-score difference
+Optimal-decision probability,M4,Centralized Two-way vs Single,1,+20 pp,.002,.007,Probability difference
+Optimal-decision probability,M4,Centralized Two-way vs Mutual,1,+15 pp,.017,—,Probability difference
+Optimal-decision probability,M4,Centralized Two-way vs Mutual,1 − 0,+17 pp,.015,—,Change in probability difference

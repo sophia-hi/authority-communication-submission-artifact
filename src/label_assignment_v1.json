@@ -1,0 +1,368 @@
+{
+  "version": "label_assignment_v1",
+  "seed": 20261019,
+  "selection_rule": "frozen label maps carried forward from the seeded constrained counterbalance; Lead-side searches may not alter these maps",
+  "label_maps_sha256": "b10b594318786be8347eef8f4e1c40a6b5271db1e26c14a7f65dc2e5316bb428",
+  "assignments": [
+    {
+      "family_id": 1,
+      "candidate_id": 15,
+      "branch1_premium_label": "A",
+      "branch2_premium_label": "B"
+    },
+    {
+      "family_id": 2,
+      "candidate_id": 9,
+      "branch1_premium_label": "A",
+      "branch2_premium_label": "A"
+    },
+    {
+      "family_id": 3,
+      "candidate_id": 516,
+      "branch1_premium_label": "B",
+      "branch2_premium_label": "A"
+    },
+    {
+      "family_id": 4,
+      "candidate_id": 1050,
+      "branch1_premium_label": "A",
+      "branch2_premium_label": "B"
+    },
+    {
+      "family_id": 5,
+      "candidate_id": 6823,
+      "branch1_premium_label": "B",
+      "branch2_premium_label": "A"
+    },
+    {
+      "family_id": 6,
+      "candidate_id": 22691,
+      "branch1_premium_label": "B",
+      "branch2_premium_label": "B"
+    },
+    {
+      "family_id": 7,
+      "candidate_id": 38,
+      "branch1_premium_label": "B",
+      "branch2_premium_label": "A"
+    },
+    {
+      "family_id": 8,
+      "candidate_id": 145,
+      "branch1_premium_label": "A",
+      "branch2_premium_label": "A"
+    },
+    {
+      "family_id": 9,
+      "candidate_id": 562,
+      "branch1_premium_label": "A",
+      "branch2_premium_label": "A"
+    },
+    {
+      "family_id": 10,
+      "candidate_id": 3734,
+      "branch1_premium_label": "B",
+      "branch2_premium_label": "B"
+    },
+    {
+      "family_id": 11,
+      "candidate_id": 33158,
+      "branch1_premium_label": "A",
+      "branch2_premium_label": "B"
+    },
+    {
+      "family_id": 12,
+      "candidate_id": 24184,
+      "branch1_premium_label": "A",
+      "branch2_premium_label": "A"
+    },
+    {
+      "family_id": 13,
+      "candidate_id": 39,
+      "branch1_premium_label": "B",
+      "branch2_premium_label": "B"
+    },
+    {
+      "family_id": 14,
+      "candidate_id": 146,
+      "branch1_premium_label": "B",
+      "branch2_premium_label": "A"
+    },
+    {
+      "family_id": 15,
+      "candidate_id": 603,
+      "branch1_premium_label": "A",
+      "branch2_premium_label": "A"
+    },
+    {
+      "family_id": 16,
+      "candidate_id": 3932,
+      "branch1_premium_label": "A",
+      "branch2_premium_label": "B"
+    },
+    {
+      "family_id": 17,
+      "candidate_id": 34926,
+      "branch1_premium_label": "A",
+      "branch2_premium_label": "B"
+    },
+    {
+      "family_id": 18,
+      "candidate_id": 48496,
+      "branch1_premium_label": "B",
+      "branch2_premium_label": "A"
+    },
+    {
+      "family_id": 19,
+      "candidate_id": 54,
+      "branch1_premium_label": "A",
+      "branch2_premium_label": "B"
+    },
+    {
+      "family_id": 20,
+      "candidate_id": 685,
+      "branch1_premium_label": "B",
+      "branch2_premium_label": "A"
+    },
+    {
+      "family_id": 21,
+      "candidate_id": 683,
+      "branch1_premium_label": "B",
+      "branch2_premium_label": "A"
+    },
+    {
+      "family_id": 22,
+      "candidate_id": 4090,
+      "branch1_premium_label": "A",
+      "branch2_premium_label": "A"
+    },
+    {
+      "family_id": 23,
+      "candidate_id": 35318,
+      "branch1_premium_label": "A",
+      "branch2_premium_label": "A"
+    },
+    {
+      "family_id": 24,
+      "candidate_id": 59586,
+      "branch1_premium_label": "A",
+      "branch2_premium_label": "A"
+    },
+    {
+      "family_id": 25,
+      "candidate_id": 55,
+      "branch1_premium_label": "B",
+      "branch2_premium_label": "A"
+    },
+    {
+      "family_id": 26,
+      "candidate_id": 890,
+      "branch1_premium_label": "A",
+      "branch2_premium_label": "B"
+    },
+    {
+      "family_id": 27,
+      "candidate_id": 944,
+      "branch1_premium_label": "A",
+      "branch2_premium_label": "A"
+    },
+    {
+      "family_id": 28,
+      "candidate_id": 4934,
+      "branch1_premium_label": "B",
+      "branch2_premium_label": "A"
+    },
+    {
+      "family_id": 29,
+      "candidate_id": 35323,
+      "branch1_premium_label": "A",
+      "branch2_premium_label": "B"
+    },
+    {
+      "family_id": 30,
+      "candidate_id": 73700,
+      "branch1_premium_label": "B",
+      "branch2_premium_label": "A"
+    },
+    {
+      "family_id": 31,
+      "candidate_id": 118,
+      "branch1_premium_label": "B",
+      "branch2_premium_label": "B"
+    },
+    {
+      "family_id": 32,
+      "candidate_id": 1404,
+      "branch1_premium_label": "B",
+      "branch2_premium_label": "B"
+    },
+    {
+      "family_id": 33,
+      "candidate_id": 1473,
+      "branch1_premium_label": "B",
+      "branch2_premium_label": "B"
+    },
+    {
+      "family_id": 34,
+      "candidate_id": 5766,
+      "branch1_premium_label": "B",
+      "branch2_premium_label": "B"
+    },
+    {
+      "family_id": 35,
+      "candidate_id": 54880,
+      "branch1_premium_label": "B",
+      "branch2_premium_label": "B"
+    },
+    {
+      "family_id": 36,
+      "candidate_id": 79446,
+      "branch1_premium_label": "A",
+      "branch2_premium_label": "B"
+    },
+    {
+      "family_id": 37,
+      "candidate_id": 169,
+      "branch1_premium_label": "A",
+      "branch2_premium_label": "B"
+    },
+    {
+      "family_id": 38,
+      "candidate_id": 1574,
+      "branch1_premium_label": "B",
+      "branch2_premium_label": "B"
+    },
+    {
+      "family_id": 39,
+      "candidate_id": 1562,
+      "branch1_premium_label": "B",
+      "branch2_premium_label": "A"
+    },
+    {
+      "family_id": 40,
+      "candidate_id": 6471,
+      "branch1_premium_label": "B",
+      "branch2_premium_label": "B"
+    },
+    {
+      "family_id": 41,
+      "candidate_id": 66094,
+      "branch1_premium_label": "A",
+      "branch2_premium_label": "A"
+    },
+    {
+      "family_id": 42,
+      "candidate_id": 127668,
+      "branch1_premium_label": "A",
+      "branch2_premium_label": "B"
+    },
+    {
+      "family_id": 43,
+      "candidate_id": 177,
+      "branch1_premium_label": "B",
+      "branch2_premium_label": "A"
+    },
+    {
+      "family_id": 44,
+      "candidate_id": 2035,
+      "branch1_premium_label": "A",
+      "branch2_premium_label": "A"
+    },
+    {
+      "family_id": 45,
+      "candidate_id": 2014,
+      "branch1_premium_label": "A",
+      "branch2_premium_label": "B"
+    },
+    {
+      "family_id": 46,
+      "candidate_id": 6511,
+      "branch1_premium_label": "B",
+      "branch2_premium_label": "A"
+    },
+    {
+      "family_id": 47,
+      "candidate_id": 74667,
+      "branch1_premium_label": "B",
+      "branch2_premium_label": "B"
+    },
+    {
+      "family_id": 48,
+      "candidate_id": 130668,
+      "branch1_premium_label": "A",
+      "branch2_premium_label": "B"
+    },
+    {
+      "family_id": 49,
+      "candidate_id": 255,
+      "branch1_premium_label": "A",
+      "branch2_premium_label": "A"
+    },
+    {
+      "family_id": 50,
+      "candidate_id": 2047,
+      "branch1_premium_label": "B",
+      "branch2_premium_label": "B"
+    },
+    {
+      "family_id": 51,
+      "candidate_id": 2077,
+      "branch1_premium_label": "A",
+      "branch2_premium_label": "B"
+    },
+    {
+      "family_id": 52,
+      "candidate_id": 7118,
+      "branch1_premium_label": "B",
+      "branch2_premium_label": "A"
+    },
+    {
+      "family_id": 53,
+      "candidate_id": 78361,
+      "branch1_premium_label": "B",
+      "branch2_premium_label": "B"
+    },
+    {
+      "family_id": 54,
+      "candidate_id": 158055,
+      "branch1_premium_label": "B",
+      "branch2_premium_label": "B"
+    },
+    {
+      "family_id": 55,
+      "candidate_id": 259,
+      "branch1_premium_label": "A",
+      "branch2_premium_label": "A"
+    },
+    {
+      "family_id": 56,
+      "candidate_id": 2195,
+      "branch1_premium_label": "A",
+      "branch2_premium_label": "B"
+    },
+    {
+      "family_id": 57,
+      "candidate_id": 2300,
+      "branch1_premium_label": "B",
+      "branch2_premium_label": "B"
+    },
+    {
+      "family_id": 58,
+      "candidate_id": 7123,
+      "branch1_premium_label": "A",
+      "branch2_premium_label": "A"
+    },
+    {
+      "family_id": 59,
+      "candidate_id": 82531,
+      "branch1_premium_label": "B",
+      "branch2_premium_label": "A"
+    },
+    {
+      "family_id": 60,
+      "candidate_id": 177034,
+      "branch1_premium_label": "A",
+      "branch2_premium_label": "A"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "export_version": "agent_facing_review_v11",
+  "organization_role_combinations": 13,
+  "rendered_role_contexts": 21,
+  "files": {
+    "agent_facing_text.json": "44ebad319f8d4da7ddbe6b2e45ed7452bd56df8e85a1019ffe894e5599d4bfce",
+    "AGENT_FACING_TEXT.md": "d6350af6ed349beaffbbde78e6e04369f4052112f24f1cc6cfc855396532f55a"
+  }
+}
