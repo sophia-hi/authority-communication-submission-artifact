@@ -25,6 +25,8 @@ python data/extension_42/select_extension.py
 python data/extension_42/balance_extension.py
 ```
 
-By default, these commands regenerate the selection and assignment in memory and compare them with the saved records. Use `--out` for selection or `--out-dir` for balancing to save a separate regenerated copy.
+The first command regenerates the economic selection and compares it with the saved records. The second validates the archived assignment, reconstructs the assigned families, and checks the active balance constraints and saved audit. It also validates the current original-family certificate. The audit retains the collection-time certificate hash as provenance; that hash identifies the original certificate, while the packaged certificate has been edited.
+
+To rerun the assignment optimization separately, use `--out-dir` to write a new set of generated files to a separate directory. A fresh solver run may find a different feasible assignment and does not replace the archived experimental assignment. Use `--out` with the selection command to save a regenerated selection.
 
 The archived `source_sha256` values identify collection-time source files. Selection verification compares the scenario contents and selection metadata; separately saved regenerated copies record the current source hashes. The packaged configuration retains the parameters used by this panel, and its file hash differs from the collection-time configuration.

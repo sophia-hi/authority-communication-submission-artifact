@@ -1,6 +1,6 @@
 # Download and verify the experimental records
 
-Download `authority_communication_records_3570.zip` from [Release v1.0.0](https://github.com/sophia-hi/authority-communication-submission-artifact/releases/tag/v1.0.0) and place it in the repository root. Check the download, extract it, and validate the records:
+Download `authority_communication_records_3570.zip` from [Release v1.0.1](https://github.com/sophia-hi/authority-communication-submission-artifact/releases/tag/v1.0.1) and place it in the repository root. Check the download, extract it, and validate the records:
 
 ```bash
 shasum -a 256 -c data/authority_communication_records_3570.zip.sha256

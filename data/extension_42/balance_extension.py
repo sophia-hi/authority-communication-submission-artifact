@@ -13,6 +13,7 @@ import hashlib
 import json
 import math
 from pathlib import Path
+from types import SimpleNamespace
 import sys
 
 import numpy as np
@@ -26,7 +27,7 @@ SOURCE = HERE.parents[1] / "src"
 sys.path.insert(0, str(SOURCE))
 
 from generator import RHO_GRID, apply_label_map, relabel_family  # noqa: E402
-from seed_design import acceptance_reasons, build_frame  # noqa: E402
+from seed_design import acceptance_reasons, build_frame, validate_frame  # noqa: E402
 
 
 def stratum(family: dict) -> tuple[str, float]:
@@ -72,8 +73,11 @@ def main() -> None:
     parser.add_argument("--out-dir", type=Path,
                         help="write regenerated assignments to a separate directory")
     args = parser.parse_args()
+    if args.out_dir and args.out_dir.resolve() == HERE.resolve():
+        parser.error("--out-dir must be separate from the archived assignment directory")
     config = yaml.safe_load((SOURCE / "config.yaml").read_text())
     original, original_audit = build_frame(config)
+    validate_frame(original, original_audit, config)
     extension_data = json.loads((HERE / "extension_42_economic_families.json").read_text())
     new = extension_data["families"]
     assert len(original) == 60 and len(new) == 42
@@ -147,11 +151,6 @@ def main() -> None:
                             ("giveway_direction", rho_key, "Lead", direction),
                             total // 2, math.ceil(total / 2))
 
-    rng = np.random.default_rng(20261027)
-    objective = rng.uniform(0.0001, 0.001, variable_count)
-    solution = None
-    active_constraints = []
-    relaxed = set()
     stages = (
         set(),
         {"rho1_answer_lead"},
@@ -162,69 +161,98 @@ def main() -> None:
         {"role_a", "giveway_direction"},
         {"role_a", "rho1_answer_lead", "giveway_direction"},
     )
-    for relaxed in stages:
-        active_constraints = [row for row in constraints if row[1][0] not in relaxed]
-        matrix = lil_matrix((len(active_constraints), variable_count), dtype=float)
-        lower = np.empty(len(active_constraints))
-        upper = np.empty(len(active_constraints))
-        for row_index, (_, key, lo, hi) in enumerate(active_constraints):
-            lower[row_index], upper[row_index] = lo, hi
-            for column_index, (family_index, _, _, _) in enumerate(states):
-                matrix[row_index, column_index] = (
-                    int(family_index == key[1]) if key[0] == "one_state"
-                    else state_features[column_index][key])
-        print(f"solving {variable_count} binary states, {len(active_constraints)} constraints; relaxed={sorted(relaxed)}", flush=True)
-        trial = milp(
-            c=objective, integrality=np.ones(variable_count),
-            bounds=Bounds(np.zeros(variable_count), np.ones(variable_count)),
-            constraints=LinearConstraint(matrix.tocsr(), lower, upper),
-            options={"time_limit": 45, "mip_rel_gap": 0.01},
+    if args.out_dir:
+        rng = np.random.default_rng(20261027)
+        objective = rng.uniform(0.0001, 0.001, variable_count)
+        solution = None
+        active_constraints = []
+        relaxed = set()
+        for relaxed in stages:
+            active_constraints = [row for row in constraints if row[1][0] not in relaxed]
+            matrix = lil_matrix((len(active_constraints), variable_count), dtype=float)
+            lower = np.empty(len(active_constraints))
+            upper = np.empty(len(active_constraints))
+            for row_index, (_, key, lo, hi) in enumerate(active_constraints):
+                lower[row_index], upper[row_index] = lo, hi
+                for column_index, (family_index, _, _, _) in enumerate(states):
+                    matrix[row_index, column_index] = (
+                        int(family_index == key[1]) if key[0] == "one_state"
+                        else state_features[column_index][key])
+            print(f"solving {variable_count} binary states, {len(active_constraints)} constraints; relaxed={sorted(relaxed)}", flush=True)
+            trial = milp(
+                c=objective, integrality=np.ones(variable_count),
+                bounds=Bounds(np.zeros(variable_count), np.ones(variable_count)),
+                constraints=LinearConstraint(matrix.tocsr(), lower, upper),
+                options={"time_limit": 45, "mip_rel_gap": 0.01},
+            )
+            print(f"MILP status {trial.status}: {trial.message}", flush=True)
+            if trial.x is not None and trial.status in (0, 1):
+                solution = trial
+                break
+        if solution is None:
+            raise RuntimeError("No balance assignment found under tested constraints")
+        # Within the feasible 24..27 bounds, minimize departures from the ideal
+        # 25..26 answer-label counts. The original 60 assignments remain fixed.
+        answer_keys = [("answer", str(rho), answer)
+                       for rho in RHO_GRID
+                       for answer in ("AA", "AB", "BA", "BB")]
+        extra_variables = 2 * len(answer_keys)
+        refined = lil_matrix((len(active_constraints) + extra_variables,
+                              variable_count + extra_variables), dtype=float)
+        refined[:len(active_constraints), :variable_count] = matrix
+        refined_lower = np.concatenate((lower, np.full(extra_variables, -np.inf)))
+        refined_upper = np.concatenate((upper, np.full(extra_variables, np.inf)))
+        for index, key in enumerate(answer_keys):
+            deficit_row = len(active_constraints) + 2 * index
+            excess_row = deficit_row + 1
+            for column in range(variable_count):
+                value = state_features[column][key]
+                refined[deficit_row, column] = value
+                refined[excess_row, column] = value
+            refined[deficit_row, variable_count + 2 * index] = 1
+            refined[excess_row, variable_count + 2 * index + 1] = -1
+            refined_lower[deficit_row] = 25 - old_features[key]
+            refined_upper[excess_row] = 26 - old_features[key]
+        refined_objective = np.concatenate((objective, np.ones(extra_variables)))
+        refined_solution = milp(
+            c=refined_objective,
+            integrality=np.concatenate((np.ones(variable_count),
+                                        np.zeros(extra_variables))),
+            bounds=Bounds(np.zeros(variable_count + extra_variables),
+                          np.ones(variable_count + extra_variables)),
+            constraints=LinearConstraint(refined.tocsr(), refined_lower,
+                                         refined_upper),
+            options={"time_limit": 120, "mip_rel_gap": 0.01},
         )
-        print(f"MILP status {trial.status}: {trial.message}", flush=True)
-        if trial.x is not None and trial.status in (0, 1):
-            solution = trial
-            break
-    if solution is None:
-        raise RuntimeError("No balance assignment found under tested constraints")
-    # Within the feasible 24..27 bounds, minimize departures from the ideal
-    # 25..26 answer-label counts. The original 60 assignments remain fixed.
-    answer_keys = [("answer", str(rho), answer)
-                   for rho in RHO_GRID
-                   for answer in ("AA", "AB", "BA", "BB")]
-    extra_variables = 2 * len(answer_keys)
-    refined = lil_matrix((len(active_constraints) + extra_variables,
-                          variable_count + extra_variables), dtype=float)
-    refined[:len(active_constraints), :variable_count] = matrix
-    refined_lower = np.concatenate((lower, np.full(extra_variables, -np.inf)))
-    refined_upper = np.concatenate((upper, np.full(extra_variables, np.inf)))
-    for index, key in enumerate(answer_keys):
-        deficit_row = len(active_constraints) + 2 * index
-        excess_row = deficit_row + 1
-        for column in range(variable_count):
-            value = state_features[column][key]
-            refined[deficit_row, column] = value
-            refined[excess_row, column] = value
-        refined[deficit_row, variable_count + 2 * index] = 1
-        refined[excess_row, variable_count + 2 * index + 1] = -1
-        refined_lower[deficit_row] = 25 - old_features[key]
-        refined_upper[excess_row] = 26 - old_features[key]
-    refined_objective = np.concatenate((objective, np.ones(extra_variables)))
-    refined_solution = milp(
-        c=refined_objective,
-        integrality=np.concatenate((np.ones(variable_count),
-                                    np.zeros(extra_variables))),
-        bounds=Bounds(np.zeros(variable_count + extra_variables),
-                      np.ones(variable_count + extra_variables)),
-        constraints=LinearConstraint(refined.tocsr(), refined_lower,
-                                     refined_upper),
-        options={"time_limit": 120, "mip_rel_gap": 0.01},
-    )
-    print(f"label refinement status {refined_solution.status}: {refined_solution.message}", flush=True)
-    if refined_solution.x is not None and refined_solution.status in (0, 1):
-        solution = refined_solution
-    chosen = [index for index, value in enumerate(solution.x[:variable_count])
-              if value > 0.5]
-    assert len(chosen) == 42
+        print(f"label refinement status {refined_solution.status}: {refined_solution.message}", flush=True)
+        if refined_solution.x is not None and refined_solution.status in (0, 1):
+            solution = refined_solution
+        chosen = [index for index, value in enumerate(solution.x[:variable_count])
+                  if value > 0.5]
+        assert len(chosen) == 42
+
+    else:
+        # Validate the actual archived choices without relying on a new solver run.
+        saved_audit = json.loads((HERE / "combined_102_balance_audit.json").read_text())
+        saved = json.loads((HERE / "extension_42_assignment.json").read_text())
+        rows = saved["assignments"]
+        if len(rows) != 42:
+            raise ValueError("archived assignment must contain exactly 42 families")
+        relaxed = set(saved_audit["relaxed_constraint_families"])
+        if relaxed not in stages:
+            raise ValueError("unknown archived constraint relaxation")
+        active_constraints = [row for row in constraints if row[1][0] not in relaxed]
+        state_index = {state: index for index, state in enumerate(states)}
+        chosen = []
+        for i, row in enumerate(rows):
+            if row["family_id"] != 61 + i or row["candidate_id"] != new[i]["candidate_id"]:
+                raise ValueError("archived family or candidate identity mismatch")
+            labels = (row["branch1_premium_label"], row["branch2_premium_label"])
+            if row["lead_branch_index"] not in (0, 1) or any(x not in ("A", "B") for x in labels):
+                raise ValueError("invalid archived role or label")
+            chosen.append(state_index[(i, row["lead_branch_index"],
+                                       int(labels[0] == "A"), int(labels[1] == "A"))])
+        solution = SimpleNamespace(message=saved_audit["solver_status"])
 
     assigned = []
     certificate = []
@@ -336,9 +364,17 @@ def main() -> None:
             (args.out_dir / name).write_text(json.dumps(payload, indent=2) + "\n")
     else:
         for name, payload in generated.items():
-            if json.loads((HERE / name).read_text()) != payload:
-                raise ValueError(f"regenerated assignment differs from {name}")
-        print("Verified archived 42-family assignment and combined balance audit")
+            archived = json.loads((HERE / name).read_text())
+            if name == "combined_102_balance_audit.json":
+                # The archived hash identifies the collection-time certificate;
+                # the current certificate is separately validated above.
+                historical_hash = archived["original_audit"]["counterbalance"]["reproducibility_sha256"]
+                if historical_hash != "26ab61f80d1c9438619ed5f6f12222e9b13cc70b5b85f33bb13eabe278c5550f":
+                    raise ValueError("unexpected collection-time certificate hash")
+                payload["original_audit"]["counterbalance"]["reproducibility_sha256"] = historical_hash
+            if archived != payload:
+                raise ValueError(f"archived assignment or balance audit differs from {name}")
+        print("Verified archived 42-family assignment, active constraints, and combined balance audit")
     print(json.dumps({key: audit[key] for key in (
         "economic_strata", "lead_branch_2_count", "premium_maps_to_A_by_branch",
         "answer_label_counts_by_rho", "giveway_direction_by_rho")}, indent=2), flush=True)
