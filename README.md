@@ -17,6 +17,8 @@ In each task, two branches choose pricing policies to maximize company profit. T
 
 ## Download the code and data
 
+A [complete review package](https://github.com/sophia-hi/authority-communication-submission-artifact/releases/download/v1.0.0/Research_Artifact_Anonymous.zip) contains the code, raw records, and instructions in one archive. After extraction, open `research_artifact/README.md`. The steps below apply to a repository checkout.
+
 Clone this repository or select **Code → Download ZIP** on GitHub. Run the commands below from the repository folder using Python 3.13; the archived analyses used Python 3.13.5.
 
 The full raw records are available for download from [GitHub Release v1.0.0](https://github.com/sophia-hi/authority-communication-submission-artifact/releases/tag/v1.0.0). Download `authority_communication_records_3570.zip` and place it in the repository folder, then check the download and extract it:
